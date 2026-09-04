@@ -3,15 +3,16 @@ import json
 from pathlib import Path
 
 DATA = Path(__file__).resolve().parent.parent / "data" / "tokyo_sample.json"
-REQUIRED = {"danchi", "ward", "address", "rent", "kyoekihi", "madori", "area",
-            "floor", "lat", "lng", "url", "updated"}
+REQUIRED = {"danchi", "ward", "area_group", "address", "rent", "kyoekihi", "madori",
+            "area", "floor", "line", "station", "lat", "lng", "url", "updated"}
 
 
 def load():
     return json.loads(DATA.read_text(encoding="utf-8"))
 
 
-def filter_units(units, max_rent=10**9, min_area=0, madori="", kw=""):
+def filter_units(units, max_rent=10**9, min_area=0, madori="", area_group="",
+                 line="", kw=""):
     out = []
     for u in units:
         if u["rent"] > max_rent:
@@ -20,7 +21,12 @@ def filter_units(units, max_rent=10**9, min_area=0, madori="", kw=""):
             continue
         if madori and u["madori"] != madori:
             continue
-        if kw and kw not in (u["danchi"] + u["ward"] + u["address"]):
+        if area_group and u["area_group"] != area_group:
+            continue
+        if line and u["line"] != line:
+            continue
+        if kw and kw not in (u["danchi"] + u["ward"] + u["address"]
+                             + u["line"] + u["station"]):
             continue
         out.append(u)
     return out
@@ -48,3 +54,15 @@ def test_filter_by_madori_and_kw():
     assert all(u["madori"] == "2DK" for u in r)
     r2 = filter_units(units, kw="練馬")
     assert all("練馬" in (u["danchi"] + u["ward"] + u["address"]) for u in r2)
+
+
+def test_filter_by_line_and_area_group():
+    units = load()
+    r = filter_units(units, line="JR埼京線")
+    assert len(r) >= 1
+    assert all(u["line"] == "JR埼京線" for u in r)
+    r2 = filter_units(units, area_group="城北")
+    assert len(r2) >= 2
+    assert all(u["area_group"] == "城北" for u in r2)
+    r3 = filter_units(units, kw="赤羽")
+    assert len(r3) >= 1  # 站名也进关键字
