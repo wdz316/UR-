@@ -115,6 +115,12 @@ def parse_floor(s):
     return int(m.group(1)) if m else None
 
 
+def parse_walk(access_html):
+    """交通HTML -> 到最近车站步行分钟（取首个 徒歩N分；纯巴士/无数据返回 None）"""
+    m = re.search(r"徒歩\s*(\d+)", clean(access_html))
+    return int(m.group(1)) if m else None
+
+
 def fetch_rooms(danchi_id):
     """取某团地全部房间（init 首批 + add 翻页直到空），返回 room/list/ 原始行列表"""
     rooms, last_id = [], None
@@ -143,6 +149,7 @@ def normalize_room(danchi, room, today):
         "madori": room.get("type"),
         "area": fnum(room.get("floorspace")),
         "floor": parse_floor(room.get("floor")),
+        "walk": parse_walk(danchi.get("access", "")),
         "line": line,
         "station": station,
         "lat": danchi.get("_lat"),

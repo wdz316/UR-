@@ -4,7 +4,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "crawler"))
 from ur_tokyo import (clean, fnum, normalize_room, num, parse_access,
-                      parse_address, parse_floor, ward_area)
+                      parse_address, parse_floor, parse_walk, ward_area)
 
 DANCHI = {"id": "20_2600", "name": "テスト団地", "skcs": "板橋区",
           "access": "<li>都営三田線「高島平」駅徒歩5分</li>",
@@ -45,6 +45,13 @@ def test_ward_area():
     assert ward_area("町田市") == "多摩"
     assert ward_area("八王子市") == "多摩"
     assert ward_area("港区") == "都心"
+
+
+def test_parse_walk():
+    assert parse_walk("<li>都営三田線「高島平」駅徒歩5分</li>") == 5
+    assert parse_walk("都営新宿線「大島」駅徒歩10～17分 JR総武線「亀戸」駅") == 10
+    assert parse_walk("JR中央線「立川」駅バス9分") is None
+    assert parse_walk("") is None
 
 
 def test_parse_address():
