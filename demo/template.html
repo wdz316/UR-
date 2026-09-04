@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UR找房 · 东京__TITLE_SUFFIX__（列表+地图）</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css">
+<style>
+body{font-family:system-ui,sans-serif;margin:0;display:flex;height:100vh}
+#side{width:470px;min-width:360px;padding:14px;overflow:auto;border-right:1px solid #ddd;box-sizing:border-box}
+#map{flex:1}
+.filters{display:flex;flex-direction:column;gap:10px;margin-bottom:10px}
+.filters label{font-size:13px;display:flex;flex-direction:column;gap:4px}
+.filters input,.filters select{font-size:14px;padding:6px;width:100%;box-sizing:border-box}
+.checks{display:flex;flex-wrap:wrap;gap:6px 12px;font-size:13px}
+.checks label{flex-direction:row;align-items:center;gap:4px;white-space:nowrap}
+.row2{display:flex;gap:10px}
+.row2 label{flex:1}
+.card{border:1px solid #e3e3e3;border-radius:8px;padding:10px;margin-bottom:10px;position:relative}
+.card.clickable{cursor:pointer}
+.card.clickable:hover{border-color:#0b6bcb}
+.card.norent{border:2px solid #d97706;background:#fffbeb}
+.card.fav{border:2px solid #eab308}
+.card.flash{outline:3px solid #0b6bcb}
+.card b{font-size:15px}
+.badge{display:inline-block;font-size:12px;color:#92400e;background:#fde68a;border-radius:4px;padding:1px 6px;margin-left:6px}
+.star{position:absolute;top:6px;right:8px;font-size:20px;cursor:pointer;border:none;background:none;color:#999}
+.star.on{color:#eab308}
+.meta{font-size:13px;color:#555;margin-top:2px}
+.count{font-size:13px;margin:8px 0;color:#333}
+.src{font-size:12px;color:#888}
+.stale{font-size:12px;color:#92400e;background:#fef3c7;border-radius:4px;padding:2px 6px;margin-left:6px}
+a{color:#0b6bcb}
+</style>
+</head>
+<body>
+<div id="side">
+<h3 style="margin:4px 0">UR找房 · 东京__TITLE_SUFFIX__ <span class="src" id="src"></span></h3>
+<div class="filters">
+<label>家賃上限(円)<input id="fRent" type="number" value="150000"></label>
+<label>面積下限(m²)<input id="fArea" type="number" value="0"></label>
+<div><div style="font-size:13px;margin-bottom:4px">間取り（多选）</div><div class="checks" id="fMadori"></div></div>
+<div class="row2">
+<label>路線<select id="fLine"><option value="">全部</option></select></label>
+<label>徒歩上限<select id="fWalk"><option value="">不限</option><option value="5">5分以内</option><option value="10">10分以内</option><option value="15">15分以内</option><option value="20">20分以内</option></select></label>
+</div>
+<label>关键字<input id="fKw" placeholder="如 赤羽 / 大島 / 駅名 / 棟号"></label>
+<label style="flex-direction:row;align-items:center;gap:6px"><input type="checkbox" id="fFavOnly" style="width:auto"> ★只看我的关注</label>
+</div>
+<div class="count" id="count"></div>
+<div id="list"></div>
+<p class="meta">点卡片在地图上定位，点地图点位滚回卡片，点 ★ 关注并置顶（存本机）。租金未公示会被高亮且不参与家賃过滤。数据来源UR官网。</p>
+</div>
+<div id="map"></div>
+<script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+/*DATA-BEGIN*/
+const DATA = [];
+const BUILD_DATE = "__BUILD_DATE__";
+/*DATA-END*/
+// 与 tests/test_demo.py 中 filter_units 保持一致
+// f: {maxRent, minArea, madori[], line, maxWalk|null, kw, favOnly, favs[]}
+// rent==null 常显（高亮）；maxWalk 设限时 walk==null 的会被筛掉
+function filterUnits(units, f){
+return units.filter(u =>
+((u.rent == null) || (u.rent <= f.maxRent)) && (u.area >= f.minArea) &&
+((f.madori.length === 0) || f.madori.includes(u.madori)) &&
+(!f.line || u.line === f.line) &&
+((f.maxWalk == null) || ((u.walk != null) && (u.walk <= f.maxWalk))) &&
+(!f.kw || (u.danchi+u.ward+(u.address||"")+(u.line||"")+(u.station||"")+(u.room||"")).includes(f.kw)) &&
+((!f.favOnly) || f.favs.includes(favId(u)))
+);
+}
+function favId(u){ return u.danchi + "|" + (u.room || ""); }
+function loadFavs(){ try { return JSON.parse(localStorage.getItem("ur_fav_v1") || "[]"); } catch (e) { return []; } }
+function saveFavs(a){ localStorage.setItem("ur_fav_v1", JSON.stringify(a)); }
+/*TILE-BEGIN*/
+const map = L.map('map').setView([35.68,139.60], 10);
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap'}).addTo(map);
+/*TILE-END*/
+let markers = [];
+function priceHtml(u){
+if (u.rent == null) return `<span class="badge">⚠ 租金未公示·问询官网</span>`;
+return `¥${u.rent.toLocaleString()}（共益¥${u.kyoekihi ?? "-"}）`;
+}
+function walkHtml(u){ return (u.walk == null) ? "步行信息无" : `駅徒歩${u.walk}分`; }
+function render(){
+let favs = loadFavs();
+const checked = [...document.querySelectorAll('#fMadori input:checked')].map(c => c.value);
+const wv = document.getElementById('fWalk').value;
+const f = {maxRent: +document.getElementById('fRent').value || 1e9,
+minArea: +document.getElementById('fArea').value || 0,
+madori: checked,
+line: document.getElementById('fLine').value,
+maxWalk: wv === "" ? null : +wv,
+kw: document.getElementById('fKw').value.trim(),
+favOnly: document.getElementById('fFavOnly').checked,
+favs: favs};
+let out = filterUnits(DATA, f);
+// 关注的沉底变置顶（保持原顺序稳定）
+out = out.filter(u => favs.includes(favId(u))).concat(out.filter(u => !favs.includes(favId(u))));
+const nNoRent = out.filter(u => u.rent == null).length;
+document.getElementById('count').textContent = `命中 ${out.length} / ${DATA.length} 件` + (nNoRent ? `（${nNoRent} 间租金未公示）` : "") + (favs.length ? `（关注 ${favs.length} 间）` : "");
+markers.forEach(m => { if (m) map.removeLayer(m); }); markers = [];
+const list = document.getElementById('list'); list.innerHTML = '';
+out.forEach((u) => {
+const isFav = favs.includes(favId(u));
+const d = document.createElement('div');
+d.className = 'card' + (u.rent == null ? ' norent' : '') + (isFav ? ' fav' : '');
+d.innerHTML = `<button class="star${isFav ? ' on' : ''}" title="关注/取消">★</button><b>${u.danchi}${u.room ? ' ' + u.room : ''}</b><div class="meta">${u.ward} · ${u.madori} · ${u.area}m² · ${u.floor}F · ${walkHtml(u)}</div><div class="meta">${u.line||""} ${u.station||""} · ${u.address||""}</div><div>${priceHtml(u)} 更新${u.updated}</div><a href="${u.url}" target="_blank">官网详情 →</a>`;
+d.querySelector('.star').addEventListener('click', (ev) => {
+ev.stopPropagation();
+let a = loadFavs(); const id = favId(u);
+a = a.includes(id) ? a.concat([]).filter(x => x !== id) : a.concat([id]);
+saveFavs(a); render();
+});
+list.appendChild(d);
+let mk = null;
+if (u.lat && u.lng) mk = L.marker([u.lat,u.lng]).addTo(map).bindPopup(`<b>${u.danchi}</b><br>${u.rent == null ? "租金未公示" : "¥"+u.rent.toLocaleString()} · ${u.madori} · ${walkHtml(u)}`);
+markers.push(mk);
+if (mk) {
+// 点地图点位 -> 左侧滚到对应卡片并闪一下（与点击卡片定位地图反向联动）
+mk.on('click', () => {
+d.scrollIntoView({behavior: 'smooth', block: 'center'});
+d.classList.add('flash');
+setTimeout(() => d.classList.remove('flash'), 1600);
+});
+d.classList.add('clickable');
+d.title = '点击在地图上定位';
+d.addEventListener('click', (ev) => {
+if (ev.target.tagName === 'A') return;
+map.flyTo([u.lat, u.lng], 15, {duration: 0.8});
+setTimeout(() => mk.openPopup(), 850);
+});
+}
+});
+}
+function fillStatic(){
+const md = [...new Set(DATA.map(u => u.madori).filter(Boolean))].sort();
+document.getElementById('fMadori').innerHTML = md.map(v => `<label><input type="checkbox" value="${v}"> ${v}</label>`).join('');
+document.getElementById('fMadori').querySelectorAll('input').forEach(c => c.addEventListener('change', render));
+const ln = [...new Set(DATA.map(u => u.line).filter(Boolean))].sort();
+document.getElementById('fLine').innerHTML = '<option value="">全部</option>' + ln.map(v => `<option>${v}</option>`).join('');
+}
+function boot(){
+fillStatic();
+const el = document.getElementById('src');
+let txt = `真实数据 ${DATA.length} 件 · ${BUILD_DATE}更新`;
+try {
+const days = Math.floor((Date.now() - new Date(BUILD_DATE).getTime()) / 86400000);
+if (days > 7) txt += `（已${days}天未更新）`;
+} catch (e) {}
+el.innerHTML = txt + (BUILD_DATE && (Date.now() - new Date(BUILD_DATE).getTime() > 7*86400000) ? '<span class="stale">数据较旧，重跑 python crawler/ur_tokyo.py + build_demo.py</span>' : '');
+['fRent','fArea','fLine','fWalk','fKw','fFavOnly'].forEach(id => document.getElementById(id).addEventListener('input', render));
+render();
+}
+boot();
+</script>
+</body>
+</html>
