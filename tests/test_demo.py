@@ -16,7 +16,7 @@ def fav_id(u):
 
 
 def filter_units(units, max_rent=10**9, min_area=0, madori=(), line="",
-                 max_walk=None, kw="", fav_only=False, favs=()):
+                 max_walk=None, kw="", ku_only=False, fav_only=False, favs=()):
     out = []
     for u in units:
         # rent 为 None（官网未公示）时不参与家賃过滤：常显，由前端高亮
@@ -33,6 +33,8 @@ def filter_units(units, max_rent=10**9, min_area=0, madori=(), line="",
             continue
         if kw and kw not in (u["danchi"] + u["ward"] + u["address"]
                              + u["line"] + u["station"]):
+            continue
+        if ku_only and not str(u.get("ward") or "").endswith("区"):
             continue
         if fav_only and fav_id(u) not in favs:
             continue
@@ -103,3 +105,14 @@ def test_fav_only():
     ids = [fav_id(units[0])]
     r = filter_units(units, fav_only=True, favs=ids)
     assert [fav_id(u) for u in r] == ids
+
+
+def test_ku_only():
+    units = [
+        {"danchi": "A", "ward": "北区", "address": "a", "line": "L",
+         "station": "S", "rent": 80000, "area": 40.0, "madori": "2DK"},
+        {"danchi": "B", "ward": "町田市", "address": "b", "line": "L",
+         "station": "S", "rent": 80000, "area": 40.0, "madori": "2DK"},
+    ]
+    assert [u["danchi"] for u in filter_units(units, ku_only=True)] == ["A"]
+    assert len(filter_units(units)) == 2  # 默认不过滤

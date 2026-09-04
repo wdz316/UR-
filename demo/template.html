@@ -45,6 +45,7 @@ a{color:#0b6bcb}
 <label>徒歩上限<select id="fWalk"><option value="">不限</option><option value="5">5分以内</option><option value="10">10分以内</option><option value="15">15分以内</option><option value="20">20分以内</option></select></label>
 </div>
 <label>关键字<input id="fKw" placeholder="如 赤羽 / 大島 / 駅名 / 棟号"></label>
+<label style="flex-direction:row;align-items:center;gap:6px"><input type="checkbox" id="fKuOnly" style="width:auto"> 23区内のみ（去掉多摩远郊）</label>
 <label style="flex-direction:row;align-items:center;gap:6px"><input type="checkbox" id="fFavOnly" style="width:auto"> ★只看我的关注</label>
 </div>
 <div class="count" id="count"></div>
@@ -59,14 +60,15 @@ const DATA = [];
 const BUILD_DATE = "__BUILD_DATE__";
 /*DATA-END*/
 // 与 tests/test_demo.py 中 filter_units 保持一致
-// f: {maxRent, minArea, madori[], line, maxWalk|null, kw, favOnly, favs[]}
-// rent==null 常显（高亮）；maxWalk 设限时 walk==null 的会被筛掉
+// f: {maxRent, minArea, madori[], line, maxWalk|null, kw, kuOnly, favOnly, favs[]}
+// rent==null 常显（高亮）；maxWalk 设限时 walk==null 的会被筛掉；kuOnly 只留 ward 以“区”结尾
 function filterUnits(units, f){
 return units.filter(u =>
 ((u.rent == null) || (u.rent <= f.maxRent)) && (u.area >= f.minArea) &&
 ((f.madori.length === 0) || f.madori.includes(u.madori)) &&
 (!f.line || u.line === f.line) &&
 ((f.maxWalk == null) || ((u.walk != null) && (u.walk <= f.maxWalk))) &&
+((!f.kuOnly) || String(u.ward || "").endsWith("区")) &&
 (!f.kw || (u.danchi+u.ward+(u.address||"")+(u.line||"")+(u.station||"")+(u.room||"")).includes(f.kw)) &&
 ((!f.favOnly) || f.favs.includes(favId(u)))
 );
@@ -94,6 +96,7 @@ madori: checked,
 line: document.getElementById('fLine').value,
 maxWalk: wv === "" ? null : +wv,
 kw: document.getElementById('fKw').value.trim(),
+kuOnly: document.getElementById('fKuOnly').checked,
 favOnly: document.getElementById('fFavOnly').checked,
 favs: favs};
 let out = filterUnits(DATA, f);
@@ -151,7 +154,7 @@ const days = Math.floor((Date.now() - new Date(BUILD_DATE).getTime()) / 86400000
 if (days > 7) txt += `（已${days}天未更新）`;
 } catch (e) {}
 el.innerHTML = txt + (BUILD_DATE && (Date.now() - new Date(BUILD_DATE).getTime() > 7*86400000) ? '<span class="stale">数据较旧，重跑 python crawler/ur_tokyo.py + build_demo.py</span>' : '');
-['fRent','fArea','fLine','fWalk','fKw','fFavOnly'].forEach(id => document.getElementById(id).addEventListener('input', render));
+['fRent','fArea','fLine','fWalk','fKw','fKuOnly','fFavOnly'].forEach(id => document.getElementById(id).addEventListener('input', render));
 render();
 }
 boot();
