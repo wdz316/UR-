@@ -21,6 +21,7 @@ body{font-family:system-ui,sans-serif;margin:0;display:flex;height:100vh}
 .card.clickable:hover{border-color:#0b6bcb}
 .card.norent{border:2px solid #d97706;background:#fffbeb}
 .card.fav{border:2px solid #eab308}
+.card.flash{outline:3px solid #0b6bcb}
 .card b{font-size:15px}
 .badge{display:inline-block;font-size:12px;color:#92400e;background:#fde68a;border-radius:4px;padding:1px 6px;margin-left:6px}
 .star{position:absolute;top:6px;right:8px;font-size:20px;cursor:pointer;border:none;background:none;color:#999}
@@ -116,6 +117,12 @@ let mk = null;
 if (u.lat && u.lng) mk = L.marker([u.lat,u.lng]).addTo(map).bindPopup(`<b>${u.danchi}</b><br>${u.rent == null ? "租金未公示" : "¥"+u.rent.toLocaleString()} · ${u.madori} · ${walkHtml(u)}`);
 markers.push(mk);
 if (mk) {
+// 点地图点位 -> 左侧滚到对应卡片并闪一下（与点击卡片定位地图反向联动）
+mk.on('click', () => {
+d.scrollIntoView({behavior: 'smooth', block: 'center'});
+d.classList.add('flash');
+setTimeout(() => d.classList.remove('flash'), 1600);
+});
 d.classList.add('clickable');
 d.title = '点击在地图上定位';
 d.addEventListener('click', (ev) => {
