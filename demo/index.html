@@ -12,6 +12,8 @@ body{font-family:system-ui,sans-serif;margin:0;display:flex;height:100vh}
 .filters{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:10px}
 .filters label{font-size:12px;display:flex;flex-direction:column;gap:4px}
 .card{border:1px solid #e3e3e3;border-radius:8px;padding:8px;margin-bottom:8px}
+.card.clickable{cursor:pointer}
+.card.clickable:hover{border-color:#0b6bcb}
 .card b{font-size:14px}
 .card.norent{border:2px solid #d97706;background:#fffbeb}
 .badge{display:inline-block;font-size:12px;color:#92400e;background:#fde68a;border-radius:4px;padding:1px 6px;margin-left:6px}
@@ -34,7 +36,7 @@ a{color:#0b6bcb}
 </div>
 <div class="count" id="count"></div>
 <div id="list"></div>
-<p class="meta">租金未公示的房源会被高亮，不会被家賃上限筛掉。数据来源UR官网，更新见卡片日期。</p>
+<p class="meta">点击房源卡片可在地图上定位。租金未公示的房源会被高亮，不会被家賃上限筛掉。数据来源UR官网，更新见卡片日期。</p>
 </div>
 <div id="map"></div>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -80,11 +82,23 @@ const nNoRent = out.filter(u => u.rent == null).length;
 document.getElementById('count').textContent = `命中 ${out.length} / ${DATA.length} 件` + (nNoRent ? `（${nNoRent} 间租金未公示）` : "");
 markers.forEach(m => map.removeLayer(m)); markers = [];
 const list = document.getElementById('list'); list.innerHTML = '';
-out.forEach(u => {
+out.forEach((u, idx) => {
 const d = document.createElement('div'); d.className = 'card' + (u.rent == null ? ' norent' : '');
 d.innerHTML = `<b>${u.danchi}${u.room ? ' ' + u.room : ''}</b><div class="meta">${u.area_group||"-"} · ${u.ward} · ${u.madori} · ${u.area}m² · ${u.floor}F</div><div class="meta">${u.line||""} ${u.station||""} · ${u.address||""}</div><div>${priceHtml(u)} 更新${u.updated}</div><a href="${u.url}" target="_blank">官网详情 →</a>`;
 list.appendChild(d);
-if (u.lat && u.lng) markers.push(L.marker([u.lat,u.lng]).addTo(map).bindPopup(`<b>${u.danchi}</b><br>${u.rent == null ? "租金未公示" : "¥"+u.rent.toLocaleString()} · ${u.madori}`));
+let mk = null;
+if (u.lat && u.lng) mk = L.marker([u.lat,u.lng]).addTo(map).bindPopup(`<b>${u.danchi}</b><br>${u.rent == null ? "租金未公示" : "¥"+u.rent.toLocaleString()} · ${u.madori}`);
+markers.push(mk);
+// 点击卡片 -> 地图飞到对应位置并打开弹窗（官网链接的点击不受影响）
+if (mk) {
+d.classList.add('clickable');
+d.title = '点击在地图上定位';
+d.addEventListener('click', (ev) => {
+if (ev.target.tagName === 'A') return;
+map.flyTo([u.lat, u.lng], 15, {duration: 0.8});
+setTimeout(() => mk.openPopup(), 850);
+});
+}
 });
 }
 ['fRent','fArea','fMadori','fAreaGroup','fLine','fKw'].forEach(id => document.getElementById(id).addEventListener('input', render));
