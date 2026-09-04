@@ -15,7 +15,8 @@ def filter_units(units, max_rent=10**9, min_area=0, madori="", area_group="",
                  line="", kw=""):
     out = []
     for u in units:
-        if u["rent"] > max_rent:
+        # rent 为 None（官网未公示）时不参与家賃过滤：常显，由前端高亮
+        if u.get("rent") is not None and u["rent"] > max_rent:
             continue
         if u["area"] < min_area:
             continue
@@ -66,3 +67,14 @@ def test_filter_by_line_and_area_group():
     assert all(u["area_group"] == "城北" for u in r2)
     r3 = filter_units(units, kw="赤羽")
     assert len(r3) >= 1  # 站名也进关键字
+
+
+def test_null_rent_always_shown():
+    units = [{"danchi": "X", "ward": "立川市", "address": "立川市幸町1-1",
+              "line": "JR中央線", "station": "立川駅", "room": "101",
+              "rent": None, "area": 50.0, "madori": "3DK",
+              "area_group": "多摩"}]
+    assert filter_units(units, max_rent=1) == units  # 再低的上限也不隐藏
+    assert filter_units(units, max_rent=10**9) == units
+    assert filter_units(units, kw="立川") == units  # 关键字仍可筛掉
+    assert filter_units(units, kw="新宿") == []
