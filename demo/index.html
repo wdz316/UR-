@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UR找房 · 东京demo（列表+地图）</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<style>
+body{font-family:system-ui,sans-serif;margin:0;display:flex;height:100vh}
+#side{width:420px;min-width:320px;padding:12px;overflow:auto;border-right:1px solid #ddd}
+#map{flex:1}
+.filters{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:10px}
+.filters label{font-size:12px;display:flex;flex-direction:column;gap:4px}
+.card{border:1px solid #e3e3e3;border-radius:8px;padding:8px;margin-bottom:8px}
+.card b{font-size:14px}
+.meta{font-size:12px;color:#555}
+.count{font-size:13px;margin:6px 0;color:#333}
+a{color:#0b6bcb}
+</style>
+</head>
+<body>
+<div id="side">
+<h3>UR找房 · 东京demo</h3>
+<div class="filters">
+<label>家賃上限(円)<input id="fRent" type="number" value="150000"></label>
+<label>面積下限(m²)<input id="fArea" type="number" value="0"></label>
+<label>間取り<select id="fMadori"><option value="">全部</option><option>1LDK</option><option>2DK</option><option>2LDK</option><option>3LDK</option></select></label>
+<label>关键字<input id="fKw" placeholder="如 練馬 / 赤羽"></label>
+</div>
+<div class="count" id="count"></div>
+<div id="list"></div>
+<p class="meta">样本数据6条（data/tokyo_sample.json），正式版由爬虫替换同结构文件。来源UR官网，更新见卡片日期。</p>
+</div>
+<div id="map"></div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+const DATA = [
+{"danchi":"光が丘パークタウン ゆりの木通り北","ward":"練馬区","address":"練馬区光が丘5-2","rent":95800,"kyoekihi":3500,"madori":"2LDK","area":55.2,"floor":4,"lat":35.7605,"lng":139.6298,"url":"https://www.ur-net.go.jp/chintai/kanto/tokyo/area/","updated":"2026-09-04"},
+{"danchi":"白鷺せせらぎタウン","ward":"中野区","address":"中野区白鷺1-12","rent":87200,"kyoekihi":3200,"madori":"2DK","area":48.6,"floor":3,"lat":35.7221,"lng":139.6291,"url":"https://www.ur-net.go.jp/chintai/kanto/tokyo/area/","updated":"2026-09-04"},
+{"danchi":"品川八潮パークタウン 潮路南第二","ward":"品川区","address":"品川区八潮5-5","rent":118000,"kyoekihi":4500,"madori":"3LDK","area":62.4,"floor":8,"lat":35.5928,"lng":139.7571,"url":"https://www.ur-net.go.jp/chintai/kanto/tokyo/area/","updated":"2026-09-04"},
+{"danchi":"シティコート大島","ward":"江東区","address":"江東区大島4-21","rent":79500,"kyoekihi":2800,"madori":"2DK","area":44.1,"floor":5,"lat":35.6879,"lng":139.8348,"url":"https://www.ur-net.go.jp/chintai/kanto/tokyo/area/","updated":"2026-09-04"},
+{"danchi":"赤羽台団地 ヌーヴェル赤羽台","ward":"北区","address":"北区赤羽台1-1","rent":132000,"kyoekihi":5200,"madori":"3LDK","area":71.3,"floor":11,"lat":35.7792,"lng":139.7214,"url":"https://www.ur-net.go.jp/chintai/kanto/tokyo/area/","updated":"2026-09-04"},
+{"danchi":"多摩ニュータウン ビューシティ別所","ward":"八王子市","address":"八王子市別所2-1","rent":62300,"kyoekihi":2500,"madori":"1LDK","area":38.9,"floor":2,"lat":35.6211,"lng":139.3928,"url":"https://www.ur-net.go.jp/chintai/kanto/tokyo/area/","updated":"2026-09-04"}
+];
+// 与 tests/test_demo.py 中 filter_units 保持一致
+function filterUnits(units, f){
+return units.filter(u =>
+(u.rent <= f.maxRent) && (u.area >= f.minArea) &&
+(!f.madori || u.madori === f.madori) &&
+(!f.kw || (u.danchi+u.ward+u.address).includes(f.kw))
+);
+}
+const map = L.map('map').setView([35.70,139.70], 10);
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap'}).addTo(map);
+let markers = [];
+function render(){
+const f = {maxRent: +document.getElementById('fRent').value || 1e9,
+minArea: +document.getElementById('fArea').value || 0,
+madori: document.getElementById('fMadori').value,
+kw: document.getElementById('fKw').value.trim()};
+const out = filterUnits(DATA, f);
+document.getElementById('count').textContent = `命中 ${out.length} / ${DATA.length} 件`;
+markers.forEach(m => map.removeLayer(m)); markers = [];
+const list = document.getElementById('list'); list.innerHTML = '';
+out.forEach(u => {
+const d = document.createElement('div'); d.className = 'card';
+d.innerHTML = `<b>${u.danchi}</b><div class="meta">${u.ward} · ${u.address} · ${u.madori} · ${u.area}m² · ${u.floor}F</div><div>¥${u.rent.toLocaleString()}（共益¥${u.kyoekihi}） 更新${u.updated}</div><a href="${u.url}" target="_blank">官网详情 →</a>`;
+list.appendChild(d);
+markers.push(L.marker([u.lat,u.lng]).addTo(map).bindPopup(`<b>${u.danchi}</b><br>¥${u.rent.toLocaleString()} · ${u.madori}`));
+});
+}
+['fRent','fArea','fMadori','fKw'].forEach(id => document.getElementById(id).addEventListener('input', render));
+render();
+</script>
+</body>
+</html>
