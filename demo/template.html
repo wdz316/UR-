@@ -8,7 +8,12 @@
 <style>
 body{font-family:system-ui,sans-serif;margin:0;display:flex;height:100vh}
 #side{width:470px;min-width:360px;padding:14px;overflow:auto;border-right:1px solid #ddd;box-sizing:border-box}
+#map{flex:1;min-height:0}
+@media (max-width: 768px){
+body{flex-direction:column}
+#side{width:100%;min-width:0;max-height:52vh;border-right:none;border-bottom:1px solid #ddd}
 #map{flex:1}
+}
 .filters{display:flex;flex-direction:column;gap:10px;margin-bottom:10px}
 .filters label{font-size:13px;display:flex;flex-direction:column;gap:4px}
 .filters input,.filters select{font-size:14px;padding:6px;width:100%;box-sizing:border-box}
@@ -155,6 +160,9 @@ if (days > 7) txt += `（已${days}天未更新）`;
 } catch (e) {}
 el.innerHTML = txt + (BUILD_DATE && (Date.now() - new Date(BUILD_DATE).getTime() > 7*86400000) ? '<span class="stale">数据较旧，重跑 python crawler/ur_tokyo.py + build_demo.py</span>' : '');
 ['fRent','fArea','fLine','fWalk','fKw','fKuOnly','fFavOnly'].forEach(id => document.getElementById(id).addEventListener('input', render));
+// 窄屏/旋转时重算地图尺寸，否则地图会白屏或错位
+window.addEventListener('resize', () => map.invalidateSize());
+setTimeout(() => map.invalidateSize(), 300);
 render();
 }
 boot();
