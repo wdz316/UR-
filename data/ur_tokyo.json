@@ -16,7 +16,7 @@
   "lng": 139.8359510216175,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_5900_room.html?JKSS=000021001",
   "room": "2号棟1001号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "シティコート大島",
@@ -35,7 +35,7 @@
   "lng": 139.8359510216175,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_5900_room.html?JKSS=000030907",
   "room": "3号棟907号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "竹の塚第二",
@@ -54,7 +54,7 @@
   "lng": 139.78903325769974,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_1310_room.html?JKSS=000019404",
   "room": "19号棟404号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "希望ヶ丘",
@@ -73,7 +73,7 @@
   "lng": 139.61985936604583,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_2340_room.html?JKSS=701011006",
   "room": "7-1-1号棟1006号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "希望ヶ丘",
@@ -92,7 +92,26 @@
   "lng": 139.61985936604583,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_2340_room.html?JKSS=701011214",
   "room": "7-1-1号棟1214号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
+ },
+ {
+  "danchi": "フレール西経堂",
+  "ward": "世田谷区",
+  "area_group": "城南",
+  "address": "世田谷区船橋5-17",
+  "rent": 148100,
+  "kyoekihi": 5470,
+  "madori": "2DK",
+  "area": 45.0,
+  "floor": 6,
+  "walk": 11,
+  "line": "小田急小田原線",
+  "station": "千歳船橋駅",
+  "lat": 35.65433840854333,
+  "lng": 139.62597013591918,
+  "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_5440_room.html?JKSS=000150601",
+  "room": "15号棟601号室",
+  "updated": "2026-09-23"
  },
  {
   "danchi": "スクエアー世田谷桜丘",
@@ -111,7 +130,7 @@
   "lng": 139.63097020666083,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_5590_room.html?JKSS=000000607",
   "room": "607号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "アクティ三軒茶屋",
@@ -130,7 +149,7 @@
   "lng": 139.67291141089666,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_6470_room.html?JKSS=000051204",
   "room": "5号棟1204号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "芦花公園",
@@ -149,7 +168,7 @@
   "lng": 139.6065266667875,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_6710_room.html?JKSS=000130410",
   "room": "13号棟410号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "芦花公園",
@@ -168,7 +187,7 @@
   "lng": 139.6065266667875,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_6710_room.html?JKSS=000160203",
   "room": "16号棟203号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "豊島五丁目",
@@ -187,7 +206,7 @@
   "lng": 139.7515101752125,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_2320_room.html?JKSS=000100902",
   "room": "10号棟902号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "館ヶ丘",
@@ -206,7 +225,7 @@
   "lng": 139.28877714532416,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_2600_room.html?JKSS=001080409",
   "room": "1-8号棟409号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "館ヶ丘",
@@ -225,7 +244,7 @@
   "lng": 139.28877714532416,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_2600_room.html?JKSS=001090404",
   "room": "1-9号棟404号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "館ヶ丘",
@@ -244,7 +263,7 @@
   "lng": 139.28877714532416,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_2600_room.html?JKSS=001090503",
   "room": "1-9号棟503号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "館ヶ丘",
@@ -263,7 +282,7 @@
   "lng": 139.28877714532416,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_2600_room.html?JKSS=001120513",
   "room": "1-12号棟513号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "館ヶ丘",
@@ -282,7 +301,7 @@
   "lng": 139.28877714532416,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_2600_room.html?JKSS=001130511",
   "room": "1-13号棟511号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "館ヶ丘",
@@ -301,7 +320,7 @@
   "lng": 139.28877714532416,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_2600_room.html?JKSS=003030407",
   "room": "3-3号棟407号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "館ヶ丘",
@@ -320,7 +339,7 @@
   "lng": 139.28877714532416,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_2600_room.html?JKSS=003060406",
   "room": "3-6号棟406号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "多摩ニュータウン　松が谷",
@@ -339,7 +358,7 @@
   "lng": 139.41876619627416,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_2720_room.html?JKSS=027060201",
   "room": "27-6号棟201号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "多摩ニュータウン シティハイツ南大沢",
@@ -358,7 +377,7 @@
   "lng": 139.37821491654083,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_3770_room.html?JKSS=000070106",
   "room": "7号棟106号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "多摩ニュータウン シティハイツ南大沢",
@@ -377,7 +396,7 @@
   "lng": 139.37821491654083,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_3770_room.html?JKSS=000100408",
   "room": "10号棟408号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "多摩ニュータウン シティハイツ南大沢",
@@ -396,7 +415,7 @@
   "lng": 139.37821491654083,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_3770_room.html?JKSS=000100608",
   "room": "10号棟608号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "多摩ニュータウン シティハイツ南大沢",
@@ -415,7 +434,7 @@
   "lng": 139.37821491654083,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_3770_room.html?JKSS=000100902",
   "room": "10号棟902号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "八王子パークヒル 宇津木台",
@@ -434,7 +453,7 @@
   "lng": 139.357722,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_4080_room.html?JKSS=002030506",
   "room": "3号棟506号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "八王子パークヒル 宇津木台",
@@ -453,7 +472,7 @@
   "lng": 139.357722,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_4080_room.html?JKSS=109010511",
   "room": "511号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "八王子パークヒル 宇津木台",
@@ -472,7 +491,7 @@
   "lng": 139.357722,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_4080_room.html?JKSS=191540711",
   "room": "154号棟711号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "多摩ニュータウン ライブ長池 コリナス長池",
@@ -491,7 +510,7 @@
   "lng": 139.40182350423666,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_4490_room.html?JKSS=013010211",
   "room": "13-1号棟211号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "トワコート西八王子",
@@ -510,7 +529,7 @@
   "lng": 139.31932889741415,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_4930_room.html?JKSS=000030501",
   "room": "3号棟501号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "多摩ニュータウン ライブ長池 長池公園せせらぎ通り北",
@@ -529,7 +548,7 @@
   "lng": 139.39571323309832,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_5060_room.html?JKSS=000030204",
   "room": "3号棟204号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "多摩ニュータウン ライブ長池 蓮生寺公園通り二番街",
@@ -548,7 +567,7 @@
   "lng": 139.3954352354175,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_5080_room.html?JKSS=000010502",
   "room": "1号棟502号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "多摩ニュータウン ライブ長池 蓮生寺公園通り二番街",
@@ -567,7 +586,7 @@
   "lng": 139.3954352354175,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_5080_room.html?JKSS=000030401",
   "room": "3号棟401号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "多摩ニュータウン ライブ長池 長池公園せせらぎ通り南",
@@ -586,7 +605,7 @@
   "lng": 139.39432461301584,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_5100_room.html?JKSS=000010403",
   "room": "1号棟403号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "八王子みなみ野シティ ヴェルディールみなみ野西",
@@ -605,7 +624,7 @@
   "lng": 139.3254405113175,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_5640_room.html?JKSS=000040409",
   "room": "4号棟409号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "多摩ニュータウン ライブ長池 ビューコート別所",
@@ -624,7 +643,7 @@
   "lng": 139.38904715842332,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_6260_room.html?JKSS=000030102",
   "room": "3号棟102号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "立川若葉町",
@@ -643,7 +662,7 @@
   "lng": 139.43653822643083,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_2140_room.html?JKSS=000018205",
   "room": "18号棟205号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "立川一番町東",
@@ -662,7 +681,7 @@
   "lng": 139.377375961605,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_3670_room.html?JKSS=000045101",
   "room": "45号棟101号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "立川一番町東",
@@ -681,7 +700,7 @@
   "lng": 139.377375961605,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_3670_room.html?JKSS=000380303",
   "room": "38号棟303号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "立川一番町東第二",
@@ -700,7 +719,7 @@
   "lng": 139.37404296902668,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_4060_room.html?JKSS=000630402",
   "room": "63号棟402号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "シティコート立川曙町",
@@ -719,7 +738,7 @@
   "lng": 139.42404030032333,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_5930_room.html?JKSS=000000210",
   "room": "210号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "新川・島屋敷通り",
@@ -738,7 +757,7 @@
   "lng": 139.57347361328166,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_5360_room.html?JKSS=000180906",
   "room": "18号棟906号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "昭島つつじが丘ハイツ",
@@ -757,7 +776,45 @@
   "lng": 139.36848879557667,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_3380_room.html?JKSS=000060211",
   "room": "6号棟211号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
+ },
+ {
+  "danchi": "昭島つつじが丘ハイツ",
+  "ward": "昭島市",
+  "area_group": "多摩",
+  "address": "昭島市つつじが丘3-4ほか",
+  "rent": 96300,
+  "kyoekihi": 5700,
+  "madori": "3DK",
+  "area": 65.0,
+  "floor": 2,
+  "walk": 9,
+  "line": "JR青梅線",
+  "station": "昭島駅",
+  "lat": 35.71349425034833,
+  "lng": 139.36848879557667,
+  "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_3380_room.html?JKSS=000060215",
+  "room": "6号棟215号室",
+  "updated": "2026-09-23"
+ },
+ {
+  "danchi": "昭島つつじが丘ハイツ",
+  "ward": "昭島市",
+  "area_group": "多摩",
+  "address": "昭島市つつじが丘3-4ほか",
+  "rent": 101600,
+  "kyoekihi": 5700,
+  "madori": "2LDK",
+  "area": 65.0,
+  "floor": 6,
+  "walk": 9,
+  "line": "JR青梅線",
+  "station": "昭島駅",
+  "lat": 35.71349425034833,
+  "lng": 139.36848879557667,
+  "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_3380_room.html?JKSS=000060606",
+  "room": "6号棟606号室",
+  "updated": "2026-09-23"
  },
  {
   "danchi": "昭島つつじが丘ハイツ",
@@ -776,7 +833,7 @@
   "lng": 139.36848879557667,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_3380_room.html?JKSS=000060811",
   "room": "6号棟811号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "鶴川",
@@ -795,7 +852,7 @@
   "lng": 139.4682206,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_1630_room.html?JKSS=000101507",
   "room": "1-1号棟507号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "鶴川",
@@ -814,7 +871,7 @@
   "lng": 139.4682206,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_1630_room.html?JKSS=000203402",
   "room": "2-3号棟402号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "鶴川",
@@ -833,7 +890,7 @@
   "lng": 139.4682206,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_1630_room.html?JKSS=000205504",
   "room": "2-5号棟504号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "鶴川",
@@ -852,7 +909,7 @@
   "lng": 139.4682206,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_1630_room.html?JKSS=000207205",
   "room": "2-7号棟205号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "鶴川",
@@ -871,7 +928,7 @@
   "lng": 139.4682206,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_1630_room.html?JKSS=000207404",
   "room": "2-7号棟404号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "鶴川",
@@ -890,7 +947,7 @@
   "lng": 139.4682206,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_1630_room.html?JKSS=000301504",
   "room": "3-1号棟504号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "鶴川",
@@ -909,7 +966,7 @@
   "lng": 139.4682206,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_1630_room.html?JKSS=000406507",
   "room": "4-6号棟507号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "鶴川",
@@ -928,7 +985,7 @@
   "lng": 139.4682206,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_1630_room.html?JKSS=000406508",
   "room": "4-6号棟508号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "町田山崎",
@@ -947,7 +1004,7 @@
   "lng": 139.4348788212675,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_1670_room.html?JKSS=000301508",
   "room": "3-1号棟508号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "町田山崎",
@@ -966,7 +1023,7 @@
   "lng": 139.4348788212675,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_1670_room.html?JKSS=000406307",
   "room": "4-6号棟307号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "町田山崎",
@@ -985,7 +1042,7 @@
   "lng": 139.4348788212675,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_1670_room.html?JKSS=000417401",
   "room": "4-17号棟401号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "町田山崎",
@@ -1004,7 +1061,7 @@
   "lng": 139.4348788212675,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_1670_room.html?JKSS=000512404",
   "room": "5-12号棟404号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "町田山崎",
@@ -1023,7 +1080,7 @@
   "lng": 139.4348788212675,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_1670_room.html?JKSS=000512508",
   "room": "5-12号棟508号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "町田山崎",
@@ -1042,7 +1099,7 @@
   "lng": 139.4348788212675,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_1670_room.html?JKSS=000601302",
   "room": "6-1号棟302号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "町田山崎",
@@ -1061,7 +1118,7 @@
   "lng": 139.4348788212675,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_1670_room.html?JKSS=000601303",
   "room": "6-1号棟303号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "町田山崎",
@@ -1080,7 +1137,7 @@
   "lng": 139.4348788212675,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_1670_room.html?JKSS=000601501",
   "room": "6-1号棟501号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "町田山崎",
@@ -1099,7 +1156,7 @@
   "lng": 139.4348788212675,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_1670_room.html?JKSS=000605504",
   "room": "6-5号棟504号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "町田山崎",
@@ -1118,7 +1175,7 @@
   "lng": 139.4348788212675,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_1670_room.html?JKSS=000607303",
   "room": "6-7号棟303号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "町田山崎",
@@ -1137,7 +1194,7 @@
   "lng": 139.4348788212675,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_1670_room.html?JKSS=000701302",
   "room": "7-1号棟302号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "町田山崎",
@@ -1156,7 +1213,7 @@
   "lng": 139.4348788212675,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_1670_room.html?JKSS=000727104",
   "room": "7-27号棟104号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "町田山崎",
@@ -1175,7 +1232,7 @@
   "lng": 139.4348788212675,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_1670_room.html?JKSS=000727507",
   "room": "7-27号棟507号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "藤の台",
@@ -1194,7 +1251,7 @@
   "lng": 139.45209956214916,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_1930_room.html?JKSS=001033302",
   "room": "1-33号棟302号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "藤の台",
@@ -1213,7 +1270,7 @@
   "lng": 139.45209956214916,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_1930_room.html?JKSS=001033308",
   "room": "1-33号棟308号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "藤の台",
@@ -1232,7 +1289,7 @@
   "lng": 139.45209956214916,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_1930_room.html?JKSS=003012301",
   "room": "3-12号棟301号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "藤の台",
@@ -1251,7 +1308,7 @@
   "lng": 139.45209956214916,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_1930_room.html?JKSS=003012401",
   "room": "3-12号棟401号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "藤の台",
@@ -1270,7 +1327,7 @@
   "lng": 139.45209956214916,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_1930_room.html?JKSS=003013507",
   "room": "3-13号棟507号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "藤の台",
@@ -1289,7 +1346,7 @@
   "lng": 139.45209956214916,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_1930_room.html?JKSS=003018501",
   "room": "3-18号棟501号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "藤の台",
@@ -1308,7 +1365,7 @@
   "lng": 139.45209956214916,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_1930_room.html?JKSS=003022302",
   "room": "3-22号棟302号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "ニュータウン小山田桜台",
@@ -1327,7 +1384,7 @@
   "lng": 139.40599146179082,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_3600_room.html?JKSS=000110404",
   "room": "11号棟404号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "ニュータウン小山田桜台",
@@ -1346,7 +1403,7 @@
   "lng": 139.40599146179082,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_3600_room.html?JKSS=000190301",
   "room": "19号棟301号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "ニュータウン小山田桜台",
@@ -1365,7 +1422,7 @@
   "lng": 139.40599146179082,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_3600_room.html?JKSS=000200305",
   "room": "20号棟305号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "ニュータウン小山田桜台",
@@ -1384,7 +1441,7 @@
   "lng": 139.40599146179082,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_3600_room.html?JKSS=000260503",
   "room": "26号棟503号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "ニュータウン小山田桜台",
@@ -1403,7 +1460,7 @@
   "lng": 139.40599146179082,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_3600_room.html?JKSS=000950106",
   "room": "95号棟106号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "ニュータウン小山田桜台",
@@ -1422,7 +1479,7 @@
   "lng": 139.40599146179082,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_3600_room.html?JKSS=000950403",
   "room": "95号棟403号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "小平駅南口",
@@ -1441,7 +1498,7 @@
   "lng": 139.4887555236975,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_1770_room.html?JKSS=000010802",
   "room": "802号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "高幡台",
@@ -1460,7 +1517,7 @@
   "lng": 139.413588,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_1970_room.html?JKSS=000510403",
   "room": "51号棟403号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "シティハイツ日野旭が丘",
@@ -1479,7 +1536,7 @@
   "lng": 139.36765816584582,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_4360_room.html?JKSS=000030114",
   "room": "3号棟114号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "多摩平の森",
@@ -1498,7 +1555,7 @@
   "lng": 139.38154549213417,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_6510_room.html?JKSS=002030701",
   "room": "2-3号棟701号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "国立富士見台",
@@ -1517,7 +1574,7 @@
   "lng": 139.44792798549668,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_1350_room.html?JKSS=000203501",
   "room": "2-3号棟501号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "国立富士見台",
@@ -1536,7 +1593,7 @@
   "lng": 139.44792798549668,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_1350_room.html?JKSS=000207406",
   "room": "2-7号棟406号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "清瀬旭が丘",
@@ -1555,7 +1612,7 @@
   "lng": 139.5381932916675,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_1580_room.html?JKSS=000243504",
   "room": "2-4-3号棟504号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "清瀬旭が丘",
@@ -1574,7 +1631,7 @@
   "lng": 139.5381932916675,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_1580_room.html?JKSS=000265308",
   "room": "2-6-5号棟308号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "清瀬旭が丘",
@@ -1593,7 +1650,7 @@
   "lng": 139.5381932916675,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_1580_room.html?JKSS=000523405",
   "room": "5-2-3号棟405号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "グリーンヒルズ東久留米",
@@ -1612,7 +1669,7 @@
   "lng": 139.541805138765,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_6880_room.html?JKSS=000010609",
   "room": "1号棟609号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "グリーンヒルズ東久留米",
@@ -1631,7 +1688,7 @@
   "lng": 139.541805138765,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_6880_room.html?JKSS=000050706",
   "room": "5号棟706号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "エステート大南公園",
@@ -1650,7 +1707,7 @@
   "lng": 139.40931777886917,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_4130_room.html?JKSS=000090107",
   "room": "9号棟107号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "エステート大南公園",
@@ -1669,7 +1726,7 @@
   "lng": 139.40931777886917,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_4130_room.html?JKSS=000100301",
   "room": "10号棟301号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "百草",
@@ -1688,7 +1745,7 @@
   "lng": 139.41904308138,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_1870_room.html?JKSS=000060509",
   "room": "6号棟509号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "多摩ニュータウン 諏訪（グリーンメゾン諏訪－２）",
@@ -1707,7 +1764,7 @@
   "lng": 139.45098589612417,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_2060_room.html?JKSS=305010304",
   "room": "3-5-1号棟304号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "多摩ニュータウン 貝取",
@@ -1726,7 +1783,7 @@
   "lng": 139.43793188512666,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_2690_room.html?JKSS=402010306",
   "room": "4-2-1号棟306号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "多摩ニュータウン 豊ヶ丘（グリーンメゾン豊ヶ丘－６）",
@@ -1745,7 +1802,7 @@
   "lng": 139.43487641706082,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_2710_room.html?JKSS=402020502",
   "room": "4-2-2号棟502号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "多摩ニュータウン 豊ヶ丘（グリーンメゾン豊ヶ丘－６）",
@@ -1764,7 +1821,7 @@
   "lng": 139.43487641706082,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_2710_room.html?JKSS=602020304",
   "room": "6-2-2号棟304号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "多摩ニュータウン 豊ヶ丘（グリーンメゾン豊ヶ丘－６）",
@@ -1783,7 +1840,7 @@
   "lng": 139.43487641706082,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_2710_room.html?JKSS=603020308",
   "room": "6-3-2号棟308号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "多摩ニュータウン メゾン聖ヶ丘－１",
@@ -1802,7 +1859,7 @@
   "lng": 139.4559850333175,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_4070_room.html?JKSS=000030503",
   "room": "3号棟503号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "多摩ニュータウン グリーンヒル豊ヶ丘－１・２",
@@ -1821,7 +1878,7 @@
   "lng": 139.43570942542166,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_4090_room.html?JKSS=140010401",
   "room": "1-40-1号棟401号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "多摩ニュータウン グリーンヒル豊ヶ丘－１・２",
@@ -1840,7 +1897,7 @@
   "lng": 139.43570942542166,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_4090_room.html?JKSS=209040402",
   "room": "2-9-4号棟402号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "多摩ニュータウン ファインヒルいなぎ ビスタノーレ向陽台",
@@ -1859,7 +1916,7 @@
   "lng": 139.49014864528334,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_4840_room.html?JKSS=000010406",
   "room": "1号棟406号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "多摩ニュータウン ファインヒルいなぎ 長峰・杜の一番街",
@@ -1878,7 +1935,7 @@
   "lng": 139.48264970290916,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_5290_room.html?JKSS=000030503",
   "room": "3号棟503号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "多摩ニュータウン ファインヒルいなぎ ビューコート若葉台",
@@ -1897,7 +1954,7 @@
   "lng": 139.4698732292125,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_5910_room.html?JKSS=000020202",
   "room": "2号棟202号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "多摩ニュータウン ファインヒルいなぎ ビューコート若葉台",
@@ -1916,7 +1973,7 @@
   "lng": 139.4698732292125,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_5910_room.html?JKSS=000040703",
   "room": "4号棟703号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "羽村",
@@ -1935,7 +1992,7 @@
   "lng": 139.32626767541,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_2270_room.html?JKSS=000130410",
   "room": "13号棟410号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "羽村",
@@ -1954,7 +2011,7 @@
   "lng": 139.32626767541,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_2270_room.html?JKSS=000200201",
   "room": "20号棟201号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  },
  {
   "danchi": "プロムナード東伏見",
@@ -1973,6 +2030,6 @@
   "lng": 139.56013857375834,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_5490_room.html?JKSS=000720409",
   "room": "72号棟409号室",
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
  }
 ]
