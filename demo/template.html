@@ -52,7 +52,7 @@ a{color:#0b6bcb}
 <label>路線<select id="fLine"><option value="">全部</option></select></label>
 <label>徒歩上限<select id="fWalk"><option value="">不限</option><option value="5">5分以内</option><option value="10">10分以内</option><option value="15">15分以内</option><option value="20">20分以内</option></select></label>
 </div>
-<label>关键字<input id="fKw" placeholder="如 赤羽 / 大島 / 駅名 / 棟号"></label>
+<label>关键字（多个词用空格隔开，命中任一）<input id="fKw" placeholder="如 赤羽 大島 町田 / 駅名 / 棟号"></label>
 <label style="flex-direction:row;align-items:center;gap:6px"><input type="checkbox" id="fKuOnly" style="width:auto"> 23区内のみ（去掉多摩远郊）</label>
 <label style="flex-direction:row;align-items:center;gap:6px"><input type="checkbox" id="fFavOnly" style="width:auto"> ★只看我的关注</label>
 </div>
@@ -77,14 +77,17 @@ const BUILD_DATE = "__BUILD_DATE__";
 // 与 tests/test_demo.py 中 filter_units 保持一致
 // f: {maxRent, minArea, madori[], line, maxWalk|null, kw, kuOnly, favOnly, favs[]}
 // rent==null 常显（高亮）；maxWalk 设限时 walk==null 的会被筛掉；kuOnly 只留 ward 以“区”结尾
+// kw 支持空格/逗号/顿号分隔多个词（含全角），命中任意一个词即保留
+function splitKw(kw){ return String(kw || "").split(/[\s\u3000,，、]+/).filter(Boolean); }
 function filterUnits(units, f){
+const kws = splitKw(f.kw);
 return units.filter(u =>
 ((u.rent == null) || (u.rent <= f.maxRent)) && (u.area >= f.minArea) &&
 ((f.madori.length === 0) || f.madori.includes(u.madori)) &&
 (!f.line || u.line === f.line) &&
 ((f.maxWalk == null) || ((u.walk != null) && (u.walk <= f.maxWalk))) &&
 ((!f.kuOnly) || String(u.ward || "").endsWith("区")) &&
-(!f.kw || (u.danchi+u.ward+(u.address||"")+(u.line||"")+(u.station||"")+(u.room||"")).includes(f.kw)) &&
+((kws.length === 0) || kws.some(k => (u.danchi+u.ward+(u.address||"")+(u.line||"")+(u.station||"")+(u.room||"")).includes(k))) &&
 ((!f.favOnly) || f.favs.includes(favId(u)))
 );
 }
@@ -121,6 +124,18 @@ const nNoRent = out.filter(u => u.rent == null).length;
 document.getElementById('count').textContent = `命中 ${out.length} / ${DATA.length} 件` + (nNoRent ? `（${nNoRent} 间租金未公示）` : "") + (favs.length ? `（关注 ${favs.length} 间）` : "");
 markers.forEach(m => { if (m) map.removeLayer(m); }); markers = [];
 const list = document.getElementById('list'); list.innerHTML = '';
+if (out.length === 0) {
+// 0 件时说清原因：区分“关键字本身就没有”和“被其他条件筛掉”，避免误以为程序坏了
+const kws = splitKw(f.kw);
+let why = '当前条件下没有符合的房源。';
+if (kws.length) {
+const hitIgnoringOthers = filterUnits(DATA, {maxRent: 1e9, minArea: 0, madori: [], line: '', maxWalk: null, kw: f.kw, kuOnly: false, favOnly: false, favs: []});
+why = hitIgnoringOthers.length === 0
+? `今天数据里没有任何房源含「${kws.join('」「')}」（关键字匹配团地名/行政区/地址/路線/駅名/棟号，共 ${DATA.length} 件）。多个词用空格隔开，命中任一个即显示。`
+: `含「${kws.join('」「')}」的房源有 ${hitIgnoringOthers.length} 间，但被其他筛选条件（家賃/面積/間取り/路線/徒歩/23区内/只看关注）筛掉了，放宽试试。`;
+}
+list.innerHTML = `<div class="card" style="background:#f6f8fa">${why}</div>`;
+}
 out.forEach((u) => {
 const isFav = favs.includes(favId(u));
 const d = document.createElement('div');
