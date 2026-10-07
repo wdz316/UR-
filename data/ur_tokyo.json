@@ -836,25 +836,6 @@
   "updated": "2026-10-07"
  },
  {
-  "danchi": "ニュータウン小山田桜台",
-  "ward": "町田市",
-  "area_group": "多摩",
-  "address": "町田市小山田桜台2-4ほか",
-  "rent": 80000,
-  "kyoekihi": 4800,
-  "madori": "3LDK",
-  "area": 77.0,
-  "floor": 4,
-  "walk": 1,
-  "line": "JR横浜線・小田急小田原線",
-  "station": "町田駅",
-  "lat": 35.587952777865,
-  "lng": 139.40599146179082,
-  "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_3600_room.html?JKSS=000950403",
-  "room": "95号棟403号室",
-  "updated": "2026-10-07"
- },
- {
   "danchi": "小平",
   "ward": "小平市",
   "area_group": "多摩",
