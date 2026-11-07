@@ -1,43 +1,5 @@
 [
  {
-  "danchi": "晴海アイランド トリトンスクエアビュープラザ",
-  "ward": "中央区",
-  "area_group": "都心",
-  "address": "中央区晴海1-6",
-  "rent": 228100,
-  "kyoekihi": 12000,
-  "madori": "2LDK",
-  "area": 61.0,
-  "floor": 7,
-  "walk": 9,
-  "line": "都営大江戸線",
-  "station": "勝どき駅",
-  "lat": 35.65878512823,
-  "lng": 139.78345685203334,
-  "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_5630_room.html?JKSS=000060703",
-  "room": "6号棟703号室",
-  "updated": "2026-11-06"
- },
- {
-  "danchi": "晴海アイランド トリトンスクエアガーデンプラザ",
-  "ward": "中央区",
-  "area_group": "都心",
-  "address": "中央区晴海1-7-2",
-  "rent": 222300,
-  "kyoekihi": 8000,
-  "madori": "2LDK",
-  "area": 63.0,
-  "floor": 3,
-  "walk": 9,
-  "line": "",
-  "station": "",
-  "lat": 35.65795189857833,
-  "lng": 139.78429015453582,
-  "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_5690_room.html?JKSS=000020317",
-  "room": "2号棟317号室",
-  "updated": "2026-11-06"
- },
- {
   "danchi": "ムーンアイランドタワー",
   "ward": "中央区",
   "area_group": "都心",
@@ -54,45 +16,26 @@
   "lng": 139.78428989876917,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_6530_room.html?JKSS=000002905",
   "room": "2905号室",
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
  },
  {
-  "danchi": "エルアージュ小石川",
-  "ward": "文京区",
-  "area_group": "都心",
-  "address": "文京区小石川1-17-1",
-  "rent": 177700,
-  "kyoekihi": 5300,
-  "madori": "1DK",
-  "area": 42.0,
-  "floor": 10,
-  "walk": 5,
-  "line": "",
-  "station": "",
-  "lat": 35.71377869780444,
-  "lng": 139.75206803768083,
-  "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_6310_room.html?JKSS=000001011",
-  "room": "1011号室",
-  "updated": "2026-11-06"
- },
- {
-  "danchi": "ヴェッセル木場南",
+  "danchi": "潮見駅前プラザ二番街",
   "ward": "江東区",
   "area_group": "城東",
-  "address": "江東区塩浜2-18",
-  "rent": 171000,
-  "kyoekihi": 4000,
-  "madori": "2LDK",
-  "area": 64.0,
-  "floor": 5,
-  "walk": 14,
-  "line": "東京メトロ東西線",
-  "station": "木場駅",
-  "lat": 35.66211859502222,
-  "lng": 139.81150992431583,
-  "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_5820_room.html?JKSS=000050504",
-  "room": "5号棟504号室",
-  "updated": "2026-11-06"
+  "address": "江東区潮見2-7-1",
+  "rent": 132800,
+  "kyoekihi": 6800,
+  "madori": "1LDK",
+  "area": 50.0,
+  "floor": 1,
+  "walk": 2,
+  "line": "JR京葉線",
+  "station": "潮見駅",
+  "lat": 35.65823022393222,
+  "lng": 139.817342952265,
+  "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_6460_room.html?JKSS=000000102",
+  "room": "102号室",
+  "updated": "2026-11-07"
  },
  {
   "danchi": "竹の塚第二",
@@ -111,26 +54,7 @@
   "lng": 139.78903325769974,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_1310_room.html?JKSS=000027210",
   "room": "27号棟210号室",
-  "updated": "2026-11-06"
- },
- {
-  "danchi": "ハートアイランド新田二番街",
-  "ward": "足立区",
-  "area_group": "城北",
-  "address": "足立区新田3-36",
-  "rent": 149700,
-  "kyoekihi": 7400,
-  "madori": "2LDK",
-  "area": 69.0,
-  "floor": 2,
-  "walk": 1,
-  "line": "JR京浜東北・根岸線",
-  "station": "王子駅",
-  "lat": 35.77043924091,
-  "lng": 139.74845461762834,
-  "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_6810_room.html?JKSS=000120206",
-  "room": "12号棟206号室",
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
  },
  {
   "danchi": "金町五丁目",
@@ -149,121 +73,26 @@
   "lng": 139.86677835440332,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_3070_room.html?JKSS=000020510",
   "room": "2号棟510号室",
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
  },
  {
-  "danchi": "アクシス東四つ木",
-  "ward": "葛飾区",
-  "area_group": "城東",
-  "address": "葛飾区東四つ木2-27-1ほか",
-  "rent": 137800,
-  "kyoekihi": 4300,
-  "madori": "2LDK",
-  "area": 68.0,
-  "floor": 2,
-  "walk": 11,
-  "line": "京成押上線",
-  "station": "四ツ木駅",
-  "lat": 35.73183391833833,
-  "lng": 139.84344850612166,
-  "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_5840_room.html?JKSS=021100209",
-  "room": "21-10号棟209号室",
-  "updated": "2026-11-06"
- },
- {
-  "danchi": "品川八潮パークタウン 潮路南第一ハイツ",
-  "ward": "品川区",
+  "danchi": "希望ヶ丘",
+  "ward": "世田谷区",
   "area_group": "城南",
-  "address": "品川区八潮5-6",
-  "rent": 152300,
-  "kyoekihi": 4020,
-  "madori": "3DK",
-  "area": 69.0,
-  "floor": 8,
-  "walk": 6,
-  "line": "東京モノレ－ル「大井競馬場前」駅 徒歩6～10分 JR京浜東北・根岸線",
-  "station": "大井町駅",
-  "lat": 35.59823547181445,
-  "lng": 139.7504068293725,
-  "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_3640_room.html?JKSS=006390802",
-  "room": "6-39号棟802号室",
-  "updated": "2026-11-06"
- },
- {
-  "danchi": "恵比寿ビュータワー",
-  "ward": "目黒区",
-  "area_group": "城南",
-  "address": "目黒区三田1-4-4",
-  "rent": 269700,
-  "kyoekihi": 4500,
-  "madori": "1LDK",
-  "area": 49.0,
-  "floor": 5,
-  "walk": 9,
-  "line": "",
-  "station": "",
-  "lat": 35.640730290943885,
-  "lng": 139.71401900571,
-  "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_5180_room.html?JKSS=000000501",
-  "room": "501号室",
-  "updated": "2026-11-06"
- },
- {
-  "danchi": "恵比寿ビュータワー",
-  "ward": "目黒区",
-  "area_group": "城南",
-  "address": "目黒区三田1-4-4",
-  "rent": 453400,
-  "kyoekihi": 4500,
-  "madori": "3LDK",
-  "area": 73.0,
-  "floor": 30,
-  "walk": 9,
-  "line": "",
-  "station": "",
-  "lat": 35.640730290943885,
-  "lng": 139.71401900571,
-  "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_5180_room.html?JKSS=000003016",
-  "room": "3016号室",
-  "updated": "2026-11-06"
- },
- {
-  "danchi": "中目黒ゲートタウンハイツ",
-  "ward": "目黒区",
-  "area_group": "城南",
-  "address": "目黒区上目黒2-1-2",
-  "rent": 216000,
-  "kyoekihi": 9800,
-  "madori": "1DK",
-  "area": 44.0,
-  "floor": 6,
+  "address": "世田谷区船橋6ほか",
+  "rent": 84600,
+  "kyoekihi": 3600,
+  "madori": "1K",
+  "area": 31.0,
+  "floor": 9,
   "walk": 1,
-  "line": "",
-  "station": "中目黒駅",
-  "lat": 35.643507504819446,
-  "lng": 139.69874236875916,
-  "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_6480_room.html?JKSS=000000607",
-  "room": "607号室",
-  "updated": "2026-11-06"
- },
- {
-  "danchi": "アミティ大森東",
-  "ward": "大田区",
-  "area_group": "城南",
-  "address": "大田区大森東1-24ほか",
-  "rent": 137000,
-  "kyoekihi": 11400,
-  "madori": "1LDK",
-  "area": 51.0,
-  "floor": 1,
-  "walk": 7,
-  "line": "京急本線",
-  "station": "平和島駅",
-  "lat": 35.5760154031,
-  "lng": 139.73763113576416,
-  "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_5540_room.html?JKSS=000030101",
-  "room": "3号棟101号室",
-  "updated": "2026-11-06"
+  "line": "小田急小田原線",
+  "station": "千歳船橋駅",
+  "lat": 35.65794902672056,
+  "lng": 139.61985936604583,
+  "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_2340_room.html?JKSS=708010908",
+  "room": "7-8-1号棟908号室",
+  "updated": "2026-11-07"
  },
  {
   "danchi": "パークサイド石神井",
@@ -282,7 +111,7 @@
   "lng": 139.59124679438833,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_5250_room.html?JKSS=000010205",
   "room": "1号棟205号室",
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
  },
  {
   "danchi": "豊島五丁目",
@@ -301,45 +130,7 @@
   "lng": 139.7515101752125,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_2320_room.html?JKSS=000091005",
   "room": "9号棟1005号室",
-  "updated": "2026-11-06"
- },
- {
-  "danchi": "王子五丁目",
-  "ward": "北区",
-  "area_group": "城北",
-  "address": "北区王子5-2",
-  "rent": 110000,
-  "kyoekihi": 4200,
-  "madori": "2DK",
-  "area": 46.0,
-  "floor": 10,
-  "walk": 2,
-  "line": "東京メトロ南北線",
-  "station": "王子神谷駅",
-  "lat": 35.764606269485,
-  "lng": 139.73345613182835,
-  "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_2670_room.html?JKSS=000031006",
-  "room": "3号棟1006号室",
-  "updated": "2026-11-06"
- },
- {
-  "danchi": "ヌーヴェル赤羽台",
-  "ward": "北区",
-  "area_group": "城北",
-  "address": "北区赤羽台2-3ほか",
-  "rent": 136700,
-  "kyoekihi": 4200,
-  "madori": "1DK",
-  "area": 43.0,
-  "floor": 7,
-  "walk": 6,
-  "line": "JR埼京線",
-  "station": "赤羽駅",
-  "lat": 35.775993586202226,
-  "lng": 139.71317951365415,
-  "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_6940_room.html?JKSS=000080706",
-  "room": "8号棟706号室",
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
  },
  {
   "danchi": "高島平",
@@ -358,7 +149,7 @@
   "lng": 139.66262765764418,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_2250_room.html?JKSS=233050205",
   "room": "2-33-5号棟205号室",
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
  },
  {
   "danchi": "館ヶ丘",
@@ -377,64 +168,7 @@
   "lng": 139.28877714532416,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_2600_room.html?JKSS=001080409",
   "room": "1-8号棟409号室",
-  "updated": "2026-11-06"
- },
- {
-  "danchi": "館ヶ丘",
-  "ward": "八王子市",
-  "area_group": "多摩",
-  "address": "八王子市館町1097",
-  "rent": 60900,
-  "kyoekihi": 4500,
-  "madori": "3DK",
-  "area": 53.0,
-  "floor": 4,
-  "walk": 1,
-  "line": "JR中央線",
-  "station": "高尾駅",
-  "lat": 35.62766870462445,
-  "lng": 139.28877714532416,
-  "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_2600_room.html?JKSS=001100402",
-  "room": "1-10号棟402号室",
-  "updated": "2026-11-06"
- },
- {
-  "danchi": "館ヶ丘",
-  "ward": "八王子市",
-  "area_group": "多摩",
-  "address": "八王子市館町1097",
-  "rent": 47200,
-  "kyoekihi": 4500,
-  "madori": "2DK",
-  "area": 42.0,
-  "floor": 5,
-  "walk": 1,
-  "line": "JR中央線",
-  "station": "高尾駅",
-  "lat": 35.62766870462445,
-  "lng": 139.28877714532416,
-  "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_2600_room.html?JKSS=001140509",
-  "room": "1-14号棟509号室",
-  "updated": "2026-11-06"
- },
- {
-  "danchi": "館ヶ丘",
-  "ward": "八王子市",
-  "area_group": "多摩",
-  "address": "八王子市館町1097",
-  "rent": 56800,
-  "kyoekihi": 4500,
-  "madori": "2LDK",
-  "area": 48.0,
-  "floor": 2,
-  "walk": 1,
-  "line": "JR中央線",
-  "station": "高尾駅",
-  "lat": 35.62766870462445,
-  "lng": 139.28877714532416,
-  "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_2600_room.html?JKSS=003040209",
-  "room": "3-4号棟209号室",
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
  },
  {
   "danchi": "多摩ニュータウン シティハイツ南大沢",
@@ -453,7 +187,7 @@
   "lng": 139.37821491654083,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_3770_room.html?JKSS=000050404",
   "room": "5号棟404号室",
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
  },
  {
   "danchi": "多摩ニュータウン シティハイツ南大沢",
@@ -472,7 +206,7 @@
   "lng": 139.37821491654083,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_3770_room.html?JKSS=000050502",
   "room": "5号棟502号室",
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
  },
  {
   "danchi": "八王子パークヒル 宇津木台",
@@ -491,7 +225,7 @@
   "lng": 139.357722,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_4080_room.html?JKSS=002010301",
   "room": "1号棟301号室",
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
  },
  {
   "danchi": "八王子パークヒル 宇津木台",
@@ -510,7 +244,7 @@
   "lng": 139.357722,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_4080_room.html?JKSS=002010507",
   "room": "1号棟507号室",
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
  },
  {
   "danchi": "八王子パークヒル 宇津木台",
@@ -529,26 +263,7 @@
   "lng": 139.357722,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_4080_room.html?JKSS=109010602",
   "room": "602号室",
-  "updated": "2026-11-06"
- },
- {
-  "danchi": "多摩ニュータウン ベルコリーヌ南大沢",
-  "ward": "八王子市",
-  "area_group": "多摩",
-  "address": "八王子市南大沢5-3ほか",
-  "rent": 110500,
-  "kyoekihi": 4100,
-  "madori": "3LDK",
-  "area": 79.0,
-  "floor": 1,
-  "walk": 8,
-  "line": "京王相模原線",
-  "station": "南大沢駅",
-  "lat": 35.6136015,
-  "lng": 139.3752527,
-  "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_4340_room.html?JKSS=003010106",
-  "room": "3-1号棟106号室",
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
  },
  {
   "danchi": "多摩ニュータウン ライブ長池 コリナス長池",
@@ -567,7 +282,7 @@
   "lng": 139.40182350423666,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_4490_room.html?JKSS=013030303",
   "room": "13-3号棟303号室",
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
  },
  {
   "danchi": "多摩ニュータウン ライブ長池 コリナス長池",
@@ -586,7 +301,7 @@
   "lng": 139.40182350423666,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_4490_room.html?JKSS=013040402",
   "room": "13-4号棟402号室",
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
  },
  {
   "danchi": "八王子みなみ野シティ ヴェルディールみなみ野西",
@@ -605,7 +320,7 @@
   "lng": 139.3254405113175,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_5640_room.html?JKSS=000040409",
   "room": "4号棟409号室",
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
  },
  {
   "danchi": "多摩ニュータウン 南大沢絹の道一番街",
@@ -624,7 +339,7 @@
   "lng": 139.3665491675625,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_5800_room.html?JKSS=000030301",
   "room": "3号棟301号室",
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
  },
  {
   "danchi": "多摩ニュータウン 南大沢絹の道一番街",
@@ -643,7 +358,7 @@
   "lng": 139.3665491675625,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_5800_room.html?JKSS=000030402",
   "room": "3号棟402号室",
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
  },
  {
   "danchi": "多摩ニュータウン 南大沢絹の道一番街",
@@ -662,7 +377,7 @@
   "lng": 139.3665491675625,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_5800_room.html?JKSS=000030504",
   "room": "3号棟504号室",
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
  },
  {
   "danchi": "多摩ニュータウン ライブ長池 ビューコート別所",
@@ -681,64 +396,26 @@
   "lng": 139.38904715842332,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_6260_room.html?JKSS=000040405",
   "room": "4号棟405号室",
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
  },
  {
-  "danchi": "立川幸町",
+  "danchi": "立川一番町東",
   "ward": "立川市",
   "area_group": "多摩",
-  "address": "立川市幸町4-52-1",
-  "rent": 80200,
-  "kyoekihi": 2950,
-  "madori": "2LDK",
-  "area": 56.0,
-  "floor": 3,
+  "address": "立川市一番町6-8-1ほか",
+  "rent": null,
+  "kyoekihi": 4300,
+  "madori": "4LDK",
+  "area": 92.0,
+  "floor": 1,
   "walk": 15,
-  "line": "多摩都市モノレール「玉川上水」駅 徒歩15～21分 西武拝島線",
-  "station": "東大和市駅",
-  "lat": 35.72710496814334,
-  "lng": 139.42931645050584,
-  "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_2130_room.html?JKSS=000008301",
-  "room": "8号棟301号室",
-  "updated": "2026-11-06"
- },
- {
-  "danchi": "立川幸町",
-  "ward": "立川市",
-  "area_group": "多摩",
-  "address": "立川市幸町4-52-1",
-  "rent": 79800,
-  "kyoekihi": 2950,
-  "madori": "3DK",
-  "area": 56.0,
-  "floor": 4,
-  "walk": 15,
-  "line": "多摩都市モノレール「玉川上水」駅 徒歩15～21分 西武拝島線",
-  "station": "東大和市駅",
-  "lat": 35.72710496814334,
-  "lng": 139.42931645050584,
-  "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_2130_room.html?JKSS=000016406",
-  "room": "16号棟406号室",
-  "updated": "2026-11-06"
- },
- {
-  "danchi": "立川若葉町",
-  "ward": "立川市",
-  "area_group": "多摩",
-  "address": "立川市若葉町4-25-1",
-  "rent": 58000,
-  "kyoekihi": 3700,
-  "madori": "2DK",
-  "area": 41.0,
-  "floor": 4,
-  "walk": 2,
-  "line": "JR中央線",
-  "station": "立川駅",
-  "lat": 35.72377211744222,
-  "lng": 139.43653822643083,
-  "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_2140_room.html?JKSS=000030406",
-  "room": "30号棟406号室",
-  "updated": "2026-11-06"
+  "line": "西武拝島線",
+  "station": "西武立川駅",
+  "lat": 35.73488100693222,
+  "lng": 139.377375961605,
+  "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_3670_room.html?JKSS=000310001",
+  "room": "31号棟1号室",
+  "updated": "2026-11-07"
  },
  {
   "danchi": "武蔵野緑町パークタウン",
@@ -757,7 +434,7 @@
   "lng": 139.56347241036667,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_5450_room.html?JKSS=000B20505",
   "room": "B2号棟505号室",
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
  },
  {
   "danchi": "新川・島屋敷通り",
@@ -776,7 +453,7 @@
   "lng": 139.57347361328166,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_5360_room.html?JKSS=000030403",
   "room": "3号棟403号室",
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
  },
  {
   "danchi": "新川・島屋敷通り",
@@ -795,45 +472,26 @@
   "lng": 139.57347361328166,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_5360_room.html?JKSS=000090608",
   "room": "9号棟608号室",
-  "updated": "2026-11-06"
- },
- {
-  "danchi": "車返",
-  "ward": "府中市",
-  "area_group": "多摩",
-  "address": "府中市白糸台5-25-1、府中市押立町1-24-1",
-  "rent": 96400,
-  "kyoekihi": 3600,
-  "madori": "2DK",
-  "area": 48.0,
-  "floor": 11,
-  "walk": 5,
-  "line": "京王線",
-  "station": "武蔵野台駅",
-  "lat": 35.66155786454,
-  "lng": 139.511812617505,
-  "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_2700_room.html?JKSS=002011124",
-  "room": "2-1号棟1124号室",
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
  },
  {
   "danchi": "グリーンハイツ車返南",
   "ward": "府中市",
   "area_group": "多摩",
   "address": "府中市押立町1-16-14",
-  "rent": 137000,
+  "rent": 129200,
   "kyoekihi": 6500,
-  "madori": "2LDK",
-  "area": 67.0,
-  "floor": 7,
+  "madori": "3DK",
+  "area": 62.0,
+  "floor": 4,
   "walk": 8,
   "line": "",
   "station": "",
   "lat": 35.65933582177333,
   "lng": 139.50847966328166,
-  "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_4450_room.html?JKSS=014010705",
-  "room": "14-1号棟705号室",
-  "updated": "2026-11-06"
+  "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_4450_room.html?JKSS=014010404",
+  "room": "14-1号棟404号室",
+  "updated": "2026-11-07"
  },
  {
   "danchi": "昭島つつじが丘ハイツ",
@@ -852,45 +510,26 @@
   "lng": 139.36848879557667,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_3380_room.html?JKSS=000061105",
   "room": "6号棟1105号室",
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
  },
  {
-  "danchi": "神代",
-  "ward": "調布市",
-  "area_group": "多摩",
-  "address": "調布市西つつじヶ丘4-23、狛江市西野川1-25",
-  "rent": 81600,
-  "kyoekihi": 3800,
-  "madori": "2DK",
-  "area": 39.0,
-  "floor": 2,
-  "walk": 7,
-  "line": "京王線",
-  "station": "つつじケ丘駅",
-  "lat": 35.65211556533333,
-  "lng": 139.57680765451335,
-  "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_1320_room.html?JKSS=000032203",
-  "room": "32号棟203号室",
-  "updated": "2026-11-06"
- },
- {
-  "danchi": "鶴川",
+  "danchi": "町田山崎",
   "ward": "町田市",
   "area_group": "多摩",
-  "address": "町田市鶴川5ほか",
-  "rent": 70800,
-  "kyoekihi": 3700,
+  "address": "町田市山崎町2130ほか",
+  "rent": 69600,
+  "kyoekihi": 4000,
   "madori": "3DK",
-  "area": 50.0,
-  "floor": 2,
+  "area": 56.0,
+  "floor": 3,
   "walk": 1,
-  "line": "小田急小田原線",
-  "station": "鶴川駅",
-  "lat": 35.5912283,
-  "lng": 139.4682206,
-  "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_1630_room.html?JKSS=000101206",
-  "room": "1-1号棟206号室",
-  "updated": "2026-11-06"
+  "line": "JR横浜線・小田急小田原線",
+  "station": "町田駅",
+  "lat": 35.569066413657225,
+  "lng": 139.4348788212675,
+  "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_1670_room.html?JKSS=000702306",
+  "room": "7-2号棟306号室",
+  "updated": "2026-11-07"
  },
  {
   "danchi": "藤の台",
@@ -909,7 +548,7 @@
   "lng": 139.45209956214916,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_1930_room.html?JKSS=001004201",
   "room": "1-4号棟201号室",
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
  },
  {
   "danchi": "藤の台",
@@ -928,7 +567,7 @@
   "lng": 139.45209956214916,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_1930_room.html?JKSS=001025402",
   "room": "1-25号棟402号室",
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
  },
  {
   "danchi": "藤の台",
@@ -947,26 +586,45 @@
   "lng": 139.45209956214916,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_1930_room.html?JKSS=001026501",
   "room": "1-26号棟501号室",
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
  },
  {
-  "danchi": "藤の台",
+  "danchi": "成瀬駅前ハイツ",
   "ward": "町田市",
   "area_group": "多摩",
-  "address": "町田市藤の台1-1ほか",
-  "rent": 59600,
+  "address": "町田市南成瀬1-2-1",
+  "rent": 127100,
   "kyoekihi": 3000,
   "madori": "3DK",
-  "area": 56.0,
-  "floor": 5,
-  "walk": 2,
+  "area": 66.0,
+  "floor": 13,
+  "walk": 3,
   "line": "JR横浜線",
-  "station": "町田駅",
-  "lat": 35.57017770670278,
-  "lng": 139.45209956214916,
-  "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_1930_room.html?JKSS=003013503",
-  "room": "3-13号棟503号室",
-  "updated": "2026-11-06"
+  "station": "成瀬駅",
+  "lat": 35.53629281091389,
+  "lng": 139.47321048030582,
+  "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_3290_room.html?JKSS=000011306",
+  "room": "1号棟1306号室",
+  "updated": "2026-11-07"
+ },
+ {
+  "danchi": "成瀬駅前ハイツ",
+  "ward": "町田市",
+  "area_group": "多摩",
+  "address": "町田市南成瀬1-2-1",
+  "rent": 121000,
+  "kyoekihi": 3000,
+  "madori": "2LDK",
+  "area": 66.0,
+  "floor": 14,
+  "walk": 3,
+  "line": "JR横浜線",
+  "station": "成瀬駅",
+  "lat": 35.53629281091389,
+  "lng": 139.47321048030582,
+  "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_3290_room.html?JKSS=000011401",
+  "room": "1号棟1401号室",
+  "updated": "2026-11-07"
  },
  {
   "danchi": "ニュータウン小山田桜台",
@@ -985,7 +643,7 @@
   "lng": 139.40599146179082,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_3600_room.html?JKSS=000150202",
   "room": "15号棟202号室",
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
  },
  {
   "danchi": "ニュータウン小山田桜台",
@@ -1004,26 +662,7 @@
   "lng": 139.40599146179082,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_3600_room.html?JKSS=000190301",
   "room": "19号棟301号室",
-  "updated": "2026-11-06"
- },
- {
-  "danchi": "ニュータウン小山田桜台",
-  "ward": "町田市",
-  "area_group": "多摩",
-  "address": "町田市小山田桜台2-4ほか",
-  "rent": 80900,
-  "kyoekihi": 4800,
-  "madori": "3LDK",
-  "area": 70.0,
-  "floor": 3,
-  "walk": 1,
-  "line": "JR横浜線・小田急小田原線",
-  "station": "町田駅",
-  "lat": 35.587952777865,
-  "lng": 139.40599146179082,
-  "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_3600_room.html?JKSS=000200305",
-  "room": "20号棟305号室",
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
  },
  {
   "danchi": "ニュータウン小山田桜台",
@@ -1042,7 +681,7 @@
   "lng": 139.40599146179082,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_3600_room.html?JKSS=000200405",
   "room": "20号棟405号室",
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
  },
  {
   "danchi": "グリーンタウン小金井",
@@ -1061,45 +700,26 @@
   "lng": 139.51458806731333,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_6270_room.html?JKSS=000120602",
   "room": "12号棟602号室",
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
  },
  {
-  "danchi": "小平駅南口",
-  "ward": "小平市",
+  "danchi": "西国分寺ゆかり参番街",
+  "ward": "国分寺市",
   "area_group": "多摩",
-  "address": "小平市美園町1-33-1",
-  "rent": 87400,
-  "kyoekihi": 4700,
-  "madori": "2DK",
-  "area": 46.0,
-  "floor": 5,
-  "walk": 1,
-  "line": "",
-  "station": "",
-  "lat": 35.73654944064778,
-  "lng": 139.4887555236975,
-  "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_1770_room.html?JKSS=000010501",
-  "room": "501号室",
-  "updated": "2026-11-06"
- },
- {
-  "danchi": "シティハイツ日野旭が丘",
-  "ward": "日野市",
-  "area_group": "多摩",
-  "address": "日野市旭が丘4-7-5",
-  "rent": 103200,
-  "kyoekihi": 2700,
+  "address": "国分寺市泉町2-5",
+  "rent": 180000,
+  "kyoekihi": 4500,
   "madori": "3LDK",
-  "area": 77.0,
-  "floor": 4,
-  "walk": 20,
+  "area": 69.0,
+  "floor": 5,
+  "walk": 6,
   "line": "JR中央線",
-  "station": "豊田駅",
-  "lat": 35.65627813349167,
-  "lng": 139.36765816584582,
-  "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_4360_room.html?JKSS=000050404",
-  "room": "5号棟404号室",
-  "updated": "2026-11-06"
+  "station": "西国分寺駅",
+  "lat": 35.69655334996333,
+  "lng": 139.4676480072375,
+  "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_6360_room.html?JKSS=000020510",
+  "room": "2号棟510号室",
+  "updated": "2026-11-07"
  },
  {
   "danchi": "国立富士見台",
@@ -1118,7 +738,7 @@
   "lng": 139.44792798549668,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_1350_room.html?JKSS=000102309",
   "room": "1-2号棟309号室",
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
  },
  {
   "danchi": "国立富士見台",
@@ -1137,7 +757,7 @@
   "lng": 139.44792798549668,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_1350_room.html?JKSS=000102408",
   "room": "1-2号棟408号室",
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
  },
  {
   "danchi": "国立富士見台",
@@ -1156,7 +776,7 @@
   "lng": 139.44792798549668,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_1350_room.html?JKSS=000117403",
   "room": "1-17号棟403号室",
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
  },
  {
   "danchi": "国立富士見台",
@@ -1175,7 +795,7 @@
   "lng": 139.44792798549668,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_1350_room.html?JKSS=000119305",
   "room": "1-19号棟305号室",
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
  },
  {
   "danchi": "国立富士見台",
@@ -1194,64 +814,26 @@
   "lng": 139.44792798549668,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_1350_room.html?JKSS=000125302",
   "room": "1-25号棟302号室",
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
  },
  {
-  "danchi": "清瀬旭が丘",
-  "ward": "清瀬市",
+  "danchi": "国立富士見台（36号棟）",
+  "ward": "国立市",
   "area_group": "多摩",
-  "address": "清瀬市旭が丘2ほか",
-  "rent": 60600,
-  "kyoekihi": 3000,
-  "madori": "3DK",
-  "area": 50.0,
-  "floor": 4,
-  "walk": 1,
-  "line": "西武池袋線",
-  "station": "清瀬駅",
-  "lat": 35.792377666100556,
-  "lng": 139.5381932916675,
-  "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_1580_room.html?JKSS=000232402",
-  "room": "2-3-2号棟402号室",
-  "updated": "2026-11-06"
- },
- {
-  "danchi": "清瀬旭が丘",
-  "ward": "清瀬市",
-  "area_group": "多摩",
-  "address": "清瀬市旭が丘2ほか",
-  "rent": 61600,
-  "kyoekihi": 3000,
-  "madori": "3DK",
-  "area": 50.0,
-  "floor": 4,
-  "walk": 1,
-  "line": "西武池袋線",
-  "station": "清瀬駅",
-  "lat": 35.792377666100556,
-  "lng": 139.5381932916675,
-  "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_1580_room.html?JKSS=000233402",
-  "room": "2-3-3号棟402号室",
-  "updated": "2026-11-06"
- },
- {
-  "danchi": "清瀬旭が丘",
-  "ward": "清瀬市",
-  "area_group": "多摩",
-  "address": "清瀬市旭が丘2ほか",
-  "rent": 55800,
-  "kyoekihi": 3000,
-  "madori": "2DK",
-  "area": 45.0,
+  "address": "国立市富士見台1-28-19",
+  "rent": 172600,
+  "kyoekihi": 4500,
+  "madori": "3LDK",
+  "area": 90.0,
   "floor": 5,
-  "walk": 1,
-  "line": "西武池袋線",
-  "station": "清瀬駅",
-  "lat": 35.792377666100556,
-  "lng": 139.5381932916675,
-  "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_1580_room.html?JKSS=000526503",
-  "room": "5-2-6号棟503号室",
-  "updated": "2026-11-06"
+  "walk": 12,
+  "line": "JR南武線",
+  "station": "谷保駅",
+  "lat": 35.685998651657776,
+  "lng": 139.45209422941417,
+  "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_1351_room.html?JKSS=001360502",
+  "room": "1-36号棟502号室",
+  "updated": "2026-11-07"
  },
  {
   "danchi": "清瀬駅前ハイツ",
@@ -1270,7 +852,7 @@
   "lng": 139.521806646165,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_3990_room.html?JKSS=000010910",
   "room": "1号棟910号室",
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
  },
  {
   "danchi": "エステート大南公園",
@@ -1289,7 +871,7 @@
   "lng": 139.40931777886917,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_4130_room.html?JKSS=000070501",
   "room": "7号棟501号室",
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
  },
  {
   "danchi": "エステート大南公園",
@@ -1308,7 +890,7 @@
   "lng": 139.40931777886917,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_4130_room.html?JKSS=000080402",
   "room": "8号棟402号室",
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
  },
  {
   "danchi": "エステート大南公園",
@@ -1327,7 +909,7 @@
   "lng": 139.40931777886917,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_4130_room.html?JKSS=000100206",
   "room": "10号棟206号室",
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
  },
  {
   "danchi": "エステート大南公園",
@@ -1346,7 +928,7 @@
   "lng": 139.40931777886917,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_4130_room.html?JKSS=000100301",
   "room": "10号棟301号室",
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
  },
  {
   "danchi": "百草",
@@ -1365,7 +947,7 @@
   "lng": 139.41904308138,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_1870_room.html?JKSS=000090403",
   "room": "9号棟403号室",
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
  },
  {
   "danchi": "百草",
@@ -1384,26 +966,7 @@
   "lng": 139.41904308138,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_1870_room.html?JKSS=000200303",
   "room": "20号棟303号室",
-  "updated": "2026-11-06"
- },
- {
-  "danchi": "百草",
-  "ward": "多摩市",
-  "area_group": "多摩",
-  "address": "多摩市和田1261、日野市百草999",
-  "rent": 54900,
-  "kyoekihi": 4750,
-  "madori": "2DK",
-  "area": 45.0,
-  "floor": 1,
-  "walk": 19,
-  "line": "京王線",
-  "station": "高幡不動駅",
-  "lat": 35.64989082534889,
-  "lng": 139.41904308138,
-  "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_1870_room.html?JKSS=103060102",
-  "room": "1-3-6号棟102号室",
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
  },
  {
   "danchi": "多摩ニュータウン 諏訪（グリーンメゾン諏訪－２）",
@@ -1422,7 +985,7 @@
   "lng": 139.45098589612417,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_2060_room.html?JKSS=305010304",
   "room": "3-5-1号棟304号室",
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
  },
  {
   "danchi": "多摩ニュータウン 諏訪（グリーンメゾン諏訪－２）",
@@ -1441,7 +1004,7 @@
   "lng": 139.45098589612417,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_2060_room.html?JKSS=305010404",
   "room": "3-5-1号棟404号室",
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
  },
  {
   "danchi": "多摩ニュータウン 永山（永山二丁目）",
@@ -1460,7 +1023,7 @@
   "lng": 139.44487535644083,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_2070_room.html?JKSS=030306305",
   "room": "3-3-6号棟305号室",
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
  },
  {
   "danchi": "多摩ニュータウン 永山（永山二丁目）",
@@ -1479,7 +1042,7 @@
   "lng": 139.44487535644083,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_2070_room.html?JKSS=030309304",
   "room": "3-3-9号棟304号室",
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
  },
  {
   "danchi": "多摩ニュータウン 永山（永山二丁目）",
@@ -1498,26 +1061,7 @@
   "lng": 139.44487535644083,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_2070_room.html?JKSS=404040902",
   "room": "4-4-4号棟902号室",
-  "updated": "2026-11-06"
- },
- {
-  "danchi": "多摩ニュータウン 貝取",
-  "ward": "多摩市",
-  "area_group": "多摩",
-  "address": "多摩市貝取2ほか",
-  "rent": 66400,
-  "kyoekihi": 3900,
-  "madori": "3K",
-  "area": 55.0,
-  "floor": 2,
-  "walk": 25,
-  "line": "京王相模原線",
-  "station": "京王多摩センター駅",
-  "lat": 35.61767237917111,
-  "lng": 139.43793188512666,
-  "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_2690_room.html?JKSS=502070203",
-  "room": "5-2-7号棟203号室",
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
  },
  {
   "danchi": "多摩ニュータウン 豊ヶ丘（グリーンメゾン豊ヶ丘－６）",
@@ -1536,7 +1080,7 @@
   "lng": 139.43487641706082,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_2710_room.html?JKSS=402030802",
   "room": "4-2-3号棟802号室",
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
  },
  {
   "danchi": "多摩ニュータウン 豊ヶ丘（グリーンメゾン豊ヶ丘－６）",
@@ -1555,7 +1099,7 @@
   "lng": 139.43487641706082,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_2710_room.html?JKSS=402040103",
   "room": "4-2-4号棟103号室",
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
  },
  {
   "danchi": "多摩ニュータウン 豊ヶ丘（グリーンメゾン豊ヶ丘－６）",
@@ -1574,7 +1118,7 @@
   "lng": 139.43487641706082,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_2710_room.html?JKSS=502010104",
   "room": "5-2-1号棟104号室",
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
  },
  {
   "danchi": "多摩ニュータウン 豊ヶ丘（グリーンメゾン豊ヶ丘－６）",
@@ -1593,7 +1137,7 @@
   "lng": 139.43487641706082,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_2710_room.html?JKSS=602010804",
   "room": "6-2-1号棟804号室",
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
  },
  {
   "danchi": "多摩ニュータウン エステート聖ヶ丘‐２",
@@ -1612,7 +1156,7 @@
   "lng": 139.456827,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_3790_room.html?JKSS=025002303",
   "room": "25-2号棟303号室",
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
  },
  {
   "danchi": "多摩ニュータウン メゾン聖ヶ丘－１",
@@ -1631,7 +1175,7 @@
   "lng": 139.4559850333175,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_4070_room.html?JKSS=000020407",
   "room": "2号棟407号室",
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
  },
  {
   "danchi": "多摩ニュータウン メゾン聖ヶ丘－１",
@@ -1650,7 +1194,7 @@
   "lng": 139.4559850333175,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_4070_room.html?JKSS=000030503",
   "room": "3号棟503号室",
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
  },
  {
   "danchi": "多摩ニュータウン グリーンヒル豊ヶ丘－１・２",
@@ -1669,7 +1213,7 @@
   "lng": 139.43570942542166,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_4090_room.html?JKSS=140010104",
   "room": "1-40-1号棟104号室",
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
  },
  {
   "danchi": "多摩ニュータウン グリーンヒル豊ヶ丘－１・２",
@@ -1688,7 +1232,7 @@
   "lng": 139.43570942542166,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_4090_room.html?JKSS=209040102",
   "room": "2-9-4号棟102号室",
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
  },
  {
   "danchi": "聖蹟桜ヶ丘ビュータワー",
@@ -1707,7 +1251,7 @@
   "lng": 139.44737408740167,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_5950_room.html?JKSS=000000508",
   "room": "508号室",
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
  },
  {
   "danchi": "多摩ニュータウン ファインヒルいなぎ リベレ向陽台",
@@ -1726,7 +1270,7 @@
   "lng": 139.48626011770332,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_4190_room.html?JKSS=510040225",
   "room": "4号棟225号室",
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
  },
  {
   "danchi": "多摩ニュータウン ファインヒルいなぎ リベレ向陽台",
@@ -1745,7 +1289,7 @@
   "lng": 139.48626011770332,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_4190_room.html?JKSS=510070402",
   "room": "7号棟402号室",
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
  },
  {
   "danchi": "多摩ニュータウン ファインヒルいなぎ ビュープラザ向陽台",
@@ -1764,7 +1308,7 @@
   "lng": 139.48487135693918,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_4500_room.html?JKSS=000010101",
   "room": "1号棟101号室",
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
  },
  {
   "danchi": "多摩ニュータウン ファインヒルいなぎ 長峰・杜の一番街",
@@ -1783,7 +1327,7 @@
   "lng": 139.48264970290916,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_5290_room.html?JKSS=000010306",
   "room": "1号棟306号室",
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
  },
  {
   "danchi": "多摩ニュータウン ファインヒルいなぎ 長峰・杜の一番街",
@@ -1802,45 +1346,7 @@
   "lng": 139.48264970290916,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_5290_room.html?JKSS=000021208",
   "room": "2号棟1208号室",
-  "updated": "2026-11-06"
- },
- {
-  "danchi": "多摩ニュータウン ファインヒルいなぎ ビューコート若葉台",
-  "ward": "稲城市",
-  "area_group": "多摩",
-  "address": "稲城市若葉台4-33",
-  "rent": 145800,
-  "kyoekihi": 4700,
-  "madori": "3LDK",
-  "area": 78.0,
-  "floor": 9,
-  "walk": 16,
-  "line": "京王相模原線",
-  "station": "若葉台駅",
-  "lat": 35.62739411947722,
-  "lng": 139.4698732292125,
-  "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_5910_room.html?JKSS=000050901",
-  "room": "5号棟901号室",
-  "updated": "2026-11-06"
- },
- {
-  "danchi": "羽村",
-  "ward": "羽村市",
-  "area_group": "多摩",
-  "address": "羽村市富士見平1-18ほか",
-  "rent": 57900,
-  "kyoekihi": 3500,
-  "madori": "3DK",
-  "area": 52.0,
-  "floor": 5,
-  "walk": 17,
-  "line": "JR青梅線",
-  "station": "羽村駅",
-  "lat": 35.76571015004278,
-  "lng": 139.32626767541,
-  "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_2270_room.html?JKSS=000060505",
-  "room": "6号棟505号室",
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
  },
  {
   "danchi": "羽村",
@@ -1859,7 +1365,7 @@
   "lng": 139.32626767541,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_2270_room.html?JKSS=000120306",
   "room": "12号棟306号室",
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
  },
  {
   "danchi": "羽村",
@@ -1878,7 +1384,7 @@
   "lng": 139.32626767541,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_2270_room.html?JKSS=000130410",
   "room": "13号棟410号室",
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
  },
  {
   "danchi": "パークサイド田無向台",
@@ -1897,26 +1403,45 @@
   "lng": 139.53125268494,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_3880_room.html?JKSS=000000111",
   "room": "111号室",
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
  },
  {
   "danchi": "新柳沢",
   "ward": "西東京市",
   "area_group": "多摩",
   "address": "西東京市柳沢3-4",
-  "rent": 118900,
+  "rent": 110600,
   "kyoekihi": 4180,
   "madori": "2DK",
-  "area": 50.0,
-  "floor": 7,
+  "area": 45.0,
+  "floor": 3,
   "walk": 11,
   "line": "西武新宿線",
   "station": "西武柳沢駅",
   "lat": 35.722107681042225,
   "lng": 139.55402854560833,
-  "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_4900_room.html?JKSS=000070701",
-  "room": "7号棟701号室",
-  "updated": "2026-11-06"
+  "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_4900_room.html?JKSS=000090305",
+  "room": "9号棟305号室",
+  "updated": "2026-11-07"
+ },
+ {
+  "danchi": "新柳沢",
+  "ward": "西東京市",
+  "area_group": "多摩",
+  "address": "西東京市柳沢3-4",
+  "rent": 111600,
+  "kyoekihi": 4180,
+  "madori": "1DK",
+  "area": 46.0,
+  "floor": 4,
+  "walk": 11,
+  "line": "西武新宿線",
+  "station": "西武柳沢駅",
+  "lat": 35.722107681042225,
+  "lng": 139.55402854560833,
+  "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_4900_room.html?JKSS=000100404",
+  "room": "10号棟404号室",
+  "updated": "2026-11-07"
  },
  {
   "danchi": "グリーンハイツ武蔵境通り",
@@ -1935,7 +1460,7 @@
   "lng": 139.545140727375,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_5210_room.html?JKSS=000040701",
   "room": "4号棟701号室",
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
  },
  {
   "danchi": "グリーンハイツ武蔵境通り",
@@ -1954,26 +1479,7 @@
   "lng": 139.545140727375,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_5210_room.html?JKSS=000050901",
   "room": "5号棟901号室",
-  "updated": "2026-11-06"
- },
- {
-  "danchi": "プロムナード東伏見",
-  "ward": "西東京市",
-  "area_group": "多摩",
-  "address": "西東京市富士町1-7",
-  "rent": 136900,
-  "kyoekihi": 6200,
-  "madori": "2LDK",
-  "area": 66.0,
-  "floor": 4,
-  "walk": 9,
-  "line": "西武新宿線",
-  "station": "東伏見駅",
-  "lat": 35.73460645089167,
-  "lng": 139.56013857375834,
-  "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_5490_room.html?JKSS=000800405",
-  "room": "80号棟405号室",
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
  },
  {
   "danchi": "グリーンプラザひばりが丘南",
@@ -1992,26 +1498,7 @@
   "lng": 139.54375070056582,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_6320_room.html?JKSS=000030205",
   "room": "3号棟205号室",
-  "updated": "2026-11-06"
- },
- {
-  "danchi": "ひばりが丘パークヒルズ",
-  "ward": "西東京市",
-  "area_group": "多摩",
-  "address": "西東京市ひばりが丘3-5、東久留米市ひばりが丘団地6ほか",
-  "rent": 102300,
-  "kyoekihi": 7000,
-  "madori": "1DK",
-  "area": 40.0,
-  "floor": 9,
-  "walk": 15,
-  "line": "西武池袋線",
-  "station": "ひばりヶ丘駅",
-  "lat": 35.74738244974389,
-  "lng": 139.5365288351225,
-  "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_6771_room.html?JKSS=005030905",
-  "room": "5-3号棟905号室",
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
  },
  {
   "danchi": "ひばりが丘パークヒルズ",
@@ -2030,25 +1517,6 @@
   "lng": 139.5365288351225,
   "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_6771_room.html?JKSS=006020302",
   "room": "6-2号棟302号室",
-  "updated": "2026-11-06"
- },
- {
-  "danchi": "ひばりが丘パークヒルズ",
-  "ward": "西東京市",
-  "area_group": "多摩",
-  "address": "西東京市ひばりが丘3-5、東久留米市ひばりが丘団地6ほか",
-  "rent": 122700,
-  "kyoekihi": 7000,
-  "madori": "1LDK",
-  "area": 50.0,
-  "floor": 5,
-  "walk": 15,
-  "line": "西武池袋線",
-  "station": "ひばりヶ丘駅",
-  "lat": 35.74738244974389,
-  "lng": 139.5365288351225,
-  "url": "https://www.ur-net.go.jp/chintai/kanto/tokyo/20_6771_room.html?JKSS=007010504",
-  "room": "7-1号棟504号室",
-  "updated": "2026-11-06"
+  "updated": "2026-11-07"
  }
 ]
